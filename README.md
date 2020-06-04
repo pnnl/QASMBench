@@ -47,7 +47,7 @@ The 'Gates' here refers to the number of *Standard OpenQASM gates* (see our [pap
 ### Small-scale
 Qunatum circuits using **2 to 5** qubits.
 
-| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
+| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Source |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | wstate    |  W-state preparation and assessment | Logical Operation |  3 |  30 | 9 |[OpenQASM](https://github.com/Qiskit/openqasm)|
 | adder     | Quantum ripple-carry adder | Quantum Arithmetic | 4 | 23 | 10 | [Scaffold](https://github.com/epiqc/ScaffCC) |
@@ -80,7 +80,7 @@ Qunatum circuits using **2 to 5** qubits.
 Quantum circutis using **6 to 15** qubits.
 
 
-| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
+| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Source |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | adder | Quantum ripple-carry adder | Quantum Arithmetic | 10 | 142 | 65 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 14 | 41 | 13 | [OpenQASM](https://github.com/Qiskit/openqasm) |
