@@ -104,7 +104,7 @@ Quantum circutis using **6 to 15** qubits.
 ### Large-scale
 Quantum circuits using more than **15** qubits.
 
-| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
+| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Source |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | ising | Ising model simulation via QC | Quantum Simulation | 500 | 5494 | 998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | ising | Ising model simulation via QC | Quantum Simulation | 1000 | 10994 | 1998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
