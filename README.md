@@ -6,11 +6,11 @@ A low-level OpenQASM benchmark suite for NISQ evaluation and simulation. Please 
 
 ## Current version
 
-Latest version: **1.0**
+Latest version: **1.1**
 
 ## About QASMBench
 
-In this repository you will find a low-level and light-weighted benchmark suite based on IBM [OpenQASM](https://github.com/Qiskit/openqasm) language (see [spec](https://arxiv.org/pdf/1707.03429.pdf)). It collects commonly seen quantum algorithms and routines from various domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc. QASMBench trades-off between generality and usability, covering the number of qubits ranging from 2 to 60K, and the circuit depth from 4 to 12M. We set most of the benchmarks with qubits less than 16 so they can be directly verified on IBM's public-available quantum machine -- [IBM Quantum Experience](https://quantum-computing.ibm.com/). 
+In this repository you will find a low-level and light-weighted benchmark suite based on IBM [OpenQASM](https://github.com/Qiskit/openqasm) language (see [spec](https://arxiv.org/pdf/1707.03429.pdf)). It collects commonly seen quantum algorithms and routines from various domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc. QASMBench trades-off between generality and usability, covering the number of qubits ranging from 2 to 60K, and the circuit depth from 4 to 12M. We set most of the benchmarks with qubits less than 16 so they can be directly verified on IBM's public-available quantum machine -- [IBM Quantum Experience](https://quantum-computing.ibm.com/). You may also want to use our Density-Matrix quantum simulator ([DM-Sim](https://github.com/pnnl/DM-Sim)) that can efficiently run on modern GPU-clusters. 
 
 
 ### OpenQASM
@@ -47,7 +47,7 @@ The 'Gates' here refers to the number of *Standard OpenQASM gates* (see our [pap
 ### Small-scale
 Qunatum circuits using **2 to 5** qubits.
 
-| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Source |
+| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | wstate    |  W-state preparation and assessment | Logical Operation |  3 |  30 | 9 |[OpenQASM](https://github.com/Qiskit/openqasm)|
 | adder     | Quantum ripple-carry adder | Quantum Arithmetic | 4 | 23 | 10 | [Scaffold](https://github.com/epiqc/ScaffCC) |
@@ -74,13 +74,17 @@ Qunatum circuits using **2 to 5** qubits.
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 4 | 220 | 88 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | shor | Shor’s algorithm | Hidden Subgroup | 5 | 64 | 30 | [Qiskit](https://github.com/Qiskit/qiskit) |
 | bell | Circuit equivalent to Bell inequality test | Logic Operation | 4 | 33 | 7 | [Cirq](https://github.com/quantumlib/cirq) |
+| qrng | Quantum random number generator | Quantum Arithmetic | 4 | 4 | 0 | [Paper](https://arxiv.org/abs/1906.04410), [Repo](https://github.com/kentarotamura612/QRNG-benchmarking) |
+| qaoa | Quantum approximate optimization algorithm | Search and Optimization | 3 | 15 | 6 | [Repo](https://github.com/jtiosue/QAOAPython) |
+| quantumwalks | Quantum walks on graphs with up to 4 nodes | Quantum Walk | 2 | 11 | 3 | [Repo](https://github.com/raffmiceli/Quantum_Walks) |
+| dnn | 3 layer quantum neural network sample | Machine Learning | 2 | 226 | 42 | Provided by Samuel Stein and Ying Mao using [Tensorflow Quantum](https://www.tensorflow.org/quantum) |
 
 
 ### Medium-scale
 Quantum circutis using **6 to 15** qubits.
 
 
-| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Source |
+| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | adder | Quantum ripple-carry adder | Quantum Arithmetic | 10 | 142 | 65 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 14 | 41 | 13 | [OpenQASM](https://github.com/Qiskit/openqasm) |
@@ -97,6 +101,7 @@ Quantum circutis using **6 to 15** qubits.
 | qaoa | Quantum approximate optimization algorithm | Search and Optimization | 6 | 270 | 54 | [Cirq](https://github.com/quantumlib/cirq) |
 | bb84 | A quantum key distribution circuit | Quantum Communication | 8 | 27 | 0 | [Cirq](https://github.com/quantumlib/cirq) |
 | multipler | Quantum multipler | Quantum Arithmetic | 15 | 574 | 246 | [Cirq](https://github.com/quantumlib/cirq) |
+| dnn | 16-dimension quantum neural network sample | Machine Learning | 8 | 1008 | 192 | Provided by Samuel Stein and Ying Mao using [Tensorflow Quantum](https://www.tensorflow.org/quantum) |
 
 
 
@@ -104,11 +109,12 @@ Quantum circutis using **6 to 15** qubits.
 ### Large-scale
 Quantum circuits using more than **15** qubits.
 
-| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Source |
+| Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | ising | Ising model simulation via QC | Quantum Simulation | 500 | 5494 | 998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | ising | Ising model simulation via QC | Quantum Simulation | 1000 | 10994 | 1998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | bigadder | Quantum ripple-carry adder | Quantum Arithmetic | 18 | 284 | 130 | [OpenQASM](https://github.com/Qiskit/openqasm)                                                                         |
+| dnn | quantum neural network sample | Machine Learning | 16 | 2016 | 384 | Provided by Samuel Stein and Ying Mao using [Tensorflow Quantum](https://www.tensorflow.org/quantum) |
 | bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 19 | 56 | 18 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | cc | Counterfeit coin finding problem via QC | Hidden Subgroup | 18 | 34 | 17 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | qft | Quantum Fourier tranform | Hidden Subgroup | 20 | 970 | 380 | [OpenQASM](https://github.com/Qiskit/openqasm) |
@@ -116,14 +122,15 @@ Quantum circuits using more than **15** qubits.
 | class_number | Compute the class group of a real quadratic number field | Hidden Subgroups | 60052 | 31110504 | 12460637 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 
 ### qelib1.inc
-OpenQASM header file that defines all the gates. Please see [OpenQASM](https://github.com/Qiskit/openqasm) and our [paper]((qasmbench.pdf) for details.
+OpenQASM header file that defines all the gates. Please see [OpenQASM](https://github.com/Qiskit/openqasm) and our [paper](qasmbench.pdf) for details.
+
 
 ## QASMBenchmark Suite Structure
 Each benchmark folder include the following file:
 - bench.qasm: OpenQASM source file.
 - bench.png: Visualization of the circuit from IBM QE.
 - res_bench.png: Running results in state-vector from IBM QE.
-- bench.cuh: Source file for our quantum simulator that will be released later.
+- bench.cuh: Source file for our [DM-Sim](https://github.com/pnnl/DM-Sim) quantum simulator.
 
 If you see "*bench_sim*" with a "**sim**" suffix, it means the results are generated by IBM QE simulator rather than the real quantum machines. The real quantum machine could not run successfully with them. 
 
@@ -135,6 +142,10 @@ The small-scale benchmarks (except basis-trotter) can be directly uploaded and v
 The medium-scale benchmarks can be either validated by real quantum machines or simulators in [IBM Quantum Experience](https://quantum-computing.ibm.com/).
 
 Some of the large-scale benchmarks can be validated on IBM simulators. 
+
+## DM-Sim simulation
+
+You may also want to use our density-matrix quantum circuit simulator [DM-Sim](https://github.com/pnnl/DM-Sim) for simulating the QASMBench benchmark circuits efficiently on modern GPU workstation like DGX-1 or GPU clusters like Oak-Ridge Summit Supercomputer. Note, although we provided the .cuh file, **you may still need to run the "dmsim_qasm_ass.py" to convert the OpenQASM file to a DM-Sim header file for successful simulation**.
 
 
 ## Authors 
