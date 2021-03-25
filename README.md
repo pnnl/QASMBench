@@ -1,16 +1,16 @@
 # QASMBench Benchmark Suite
 
-A low-level OpenQASM benchmark suite for NISQ evaluation and simulation. Please see our paper ([attached](qasmbench.pdf) and [arXiv](https://arxiv.org/abs/2005.13018)) for details.
+An OpenQASM benchmark suite for NISQ evaluation. The .qasm code can be directly loaded in [IBM Quantum Experience](https://quantum-computing.ibm.com/) for execution. Please see our paper ([attached](qasmbench.pdf) and [arXiv](https://arxiv.org/abs/2005.13018)) for details.
 
 ![alt text](example.png)
 
 ## Current version
 
-Latest version: **1.1**
+Latest version: **1.2**
 
 ## About QASMBench
 
-In this repository you will find a low-level and light-weighted benchmark suite based on IBM [OpenQASM](https://github.com/Qiskit/openqasm) language (see [spec](https://arxiv.org/pdf/1707.03429.pdf)). It collects commonly seen quantum algorithms and routines from various domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc. QASMBench trades-off between generality and usability, covering the number of qubits ranging from 2 to 60K, and the circuit depth from 4 to 12M. We set most of the benchmarks with qubits less than 16 so they can be directly verified on IBM's public-available quantum machine -- [IBM Quantum Experience](https://quantum-computing.ibm.com/). You may also want to use our Density-Matrix quantum simulator ([DM-Sim](https://github.com/pnnl/DM-Sim)) that can efficiently run on modern GPU-clusters. 
+In this repository you will find a light-weighted benchmark suite based on IBM [OpenQASM](https://github.com/Qiskit/openqasm) language (see [spec](https://arxiv.org/pdf/1707.03429.pdf)). It collects commonly seen quantum algorithms and routines from various domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc. QASMBench trades-off between generality and usability, covering the number of qubits ranging from 2 to 60K, and the circuit depth from 4 to 12M. We set most of the benchmarks with qubits less than 16 so they can be directly verified on IBM's public-available quantum machine -- [IBM Quantum Experience](https://quantum-computing.ibm.com/). You may also want to use our Density-Matrix quantum simulator ([DM-Sim](https://github.com/pnnl/DM-Sim)) that can efficiently run on CPU and GPU-clusters. 
 
 
 ### OpenQASM
@@ -77,7 +77,7 @@ Qunatum circuits using **2 to 5** qubits.
 | qrng | Quantum random number generator | Quantum Arithmetic | 4 | 4 | 0 | [Paper](https://arxiv.org/abs/1906.04410), [Repo](https://github.com/kentarotamura612/QRNG-benchmarking) |
 | qaoa | Quantum approximate optimization algorithm | Search and Optimization | 3 | 15 | 6 | [Repo](https://github.com/jtiosue/QAOAPython) |
 | quantumwalks | Quantum walks on graphs with up to 4 nodes | Quantum Walk | 2 | 11 | 3 | [Repo](https://github.com/raffmiceli/Quantum_Walks) |
-| dnn | 3 layer quantum neural network sample | Machine Learning | 2 | 226 | 42 | Provided by Samuel Stein and Ying Mao using [Tensorflow Quantum](https://www.tensorflow.org/quantum) |
+| dnn | 3 layer quantum neural network sample | Machine Learning | 2 | 226 | 42 | [Ref](https://arxiv.org/abs/2012.00256) |
 
 
 ### Medium-scale
@@ -101,9 +101,8 @@ Quantum circutis using **6 to 15** qubits.
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 8 | 10808 | 5488 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | qaoa | Quantum approximate optimization algorithm | Search and Optimization | 6 | 270 | 54 | [Cirq](https://github.com/quantumlib/cirq) |
 | bb84 | A quantum key distribution circuit | Quantum Communication | 8 | 27 | 0 | [Cirq](https://github.com/quantumlib/cirq) |
-| multipler | Quantum multipler | Quantum Arithmetic | 15 | 574 | 246 | [Cirq](https://github.com/quantumlib/cirq) |
-| dnn | 16-dimension quantum neural network sample | Machine Learning | 8 | 1008 | 192 | Provided by Samuel Stein and Ying Mao using [Tensorflow Quantum](https://www.tensorflow.org/quantum) |
-
+| multiplier | Quantum multiplier | Quantum Arithmetic | 15 | 574 | 246 | [Cirq](https://github.com/quantumlib/cirq) |
+| dnn | 16-dimension quantum neural network sample | Machine Learning | 8 | 1008 | 192 | [Ref](https://arxiv.org/abs/2012.00256) |
 
 
 
@@ -112,14 +111,21 @@ Quantum circuits using more than **15** qubits.
 
 | Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
+| dnn | quantum neural network sample | Machine Learning | 16 | 2016 | 384 | [Ref](https://arxiv.org/abs/2012.00256) |
+| bigadder | Quantum ripple-carry adder | Quantum Arithmetic | 18 | 284 | 130 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| cc | Counterfeit coin finding problem via QC | Hidden Subgroup | 18 | 34 | 17 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 19 | 56 | 18 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| qft | Quantum Fourier tranform | Hidden Subgroup | 20 | 970 | 380 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| bwt | Binary Welded Tree: a quantum walk algorithm in continuous time domain | Quantum Walk | 21 | 462001 | 174800 | QASMBench |
+| cat_state | Coherent superposition of two coherent states with opposite phase | Logical Operation | 22 | 22 | 21 | QASMBench |
+| ghz_state | Greenberger-Horne-Zeilinger (GHZ) state for max entanglement | Logical Operation | 23 | 23 | 22 | QASMBench |
+| ising | Ising model simulation via QC | Quantum Simulation | 26 | 280 | 50 | QASMBench |
+| multiplier | Quantum multiplier | Quantum Arithmetic | 25 | 1743 | 750 | [Cirq](https://github.com/quantumlib/cirq) |
+| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 18 | 2300 | 898 | [Scaffold](https://github.com/epiqc/ScaffCC) |
+| swap_test | Swap test to measure quantum state distance | Machine Learning | 25 | 230 | 96 | QASMBench |
+| vqe | Variational quantum eigensolver with UCCSD | Quantum Simulation | 24 | 2306072 | 1538240 | QASMBench |
 | ising | Ising model simulation via QC | Quantum Simulation | 500 | 5494 | 998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | ising | Ising model simulation via QC | Quantum Simulation | 1000 | 10994 | 1998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-| bigadder | Quantum ripple-carry adder | Quantum Arithmetic | 18 | 284 | 130 | [OpenQASM](https://github.com/Qiskit/openqasm)                                                                         |
-| dnn | quantum neural network sample | Machine Learning | 16 | 2016 | 384 | Provided by Samuel Stein and Ying Mao using [Tensorflow Quantum](https://www.tensorflow.org/quantum) |
-| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 19 | 56 | 18 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| cc | Counterfeit coin finding problem via QC | Hidden Subgroup | 18 | 34 | 17 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| qft | Quantum Fourier tranform | Hidden Subgroup | 20 | 970 | 380 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 480 | 16064 | 6274 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | class_number | Compute the class group of a real quadratic number field | Hidden Subgroups | 60052 | 31110504 | 12460637 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 
 ### qelib1.inc
@@ -130,11 +136,8 @@ OpenQASM header file that defines all the gates. Please see [OpenQASM](https://g
 Each benchmark folder include the following file:
 - bench.qasm: OpenQASM source file.
 - bench.png: Visualization of the circuit from IBM QE.
-- res_bench.png: Running results in state-vector from IBM QE.
+- res_bench.png: Running results from IBM QE quantum backends (mainly 5-qubit Burlington, 15-qubit Melbourne, and 27-qubit Paris).
 - bench.cuh: Source file for our [DM-Sim](https://github.com/pnnl/DM-Sim) quantum simulator.
-
-If you see "*bench_sim*" with a "**sim**" suffix, it means the results are generated by IBM QE simulator rather than the real quantum machines. The real quantum machine could not run successfully with them. 
-
 
 ## Tests
 
@@ -146,8 +149,7 @@ Some of the large-scale benchmarks can be validated on IBM simulators.
 
 ## DM-Sim simulation
 
-You may also want to use our density-matrix quantum circuit simulator [DM-Sim](https://github.com/pnnl/DM-Sim) for simulating the QASMBench benchmark circuits efficiently on modern GPU workstation like DGX-1 or GPU clusters like Oak-Ridge Summit Supercomputer. Note, although we provided the .cuh file, **you may still need to run the "dmsim_qasm_ass.py" to convert the OpenQASM file to a DM-Sim header file for successful simulation**.
-
+You may also want to use our density-matrix quantum circuit simulator [DM-Sim](https://github.com/pnnl/DM-Sim) for simulating the QASMBench benchmark circuits efficiently on modern CPU (Intel X86, AMD X86, IBM Power), GPU (NVIDIA GPU and AMD GPU) and Xeon-Phi workstations or clusters ORNL Summit, ANL Theta, and NERSC Cori Supercomputers. 
 
 ## Authors 
 
@@ -182,7 +184,7 @@ This project is licensed under the BSD License, see [LICENSE](LICENSE) file for 
 
 ## Acknowledgments
 
-We thank the many developers and open-source community for providing these awesome quantum circuits online so we are able to collect and form this benchmark suite. This work was supported by PNNL's *Quantum Algorithms, Software, and Architectures* (QUASAR) LDRD Initiative. The Pacific Northwest National Laboratory (PNNL) is operated by Battelle for the U.S. Department of Energy (DOE) under contract DE-AC05-76RL01830. 
+We thank the many developers and open-source community for providing these awesome quantum circuits online so we are able to collect and form this benchmark suite. This work was originally supported by PNNL's *Quantum Algorithms, Software, and Architectures* (QUASAR) LDRD Initiative. It is now supported by U.S. DOE *Co-design Center for Quantum Advantage* ([C2QA](https://www.bnl.gov/quantumcenter/)) Quantum Information Science (QIS) center XCITe crosscut. The Pacific Northwest National Laboratory (PNNL) is operated by Battelle for the U.S. Department of Energy (DOE) under contract DE-AC05-76RL01830. 
 
 ## Contributing
 
