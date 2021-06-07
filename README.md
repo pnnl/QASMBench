@@ -13,31 +13,6 @@ Latest version: **1.2**
 In this repository you will find a light-weighted benchmark suite based on IBM [OpenQASM](https://github.com/Qiskit/openqasm) language (see [spec](https://arxiv.org/pdf/1707.03429.pdf)). It collects commonly seen quantum algorithms and routines from various domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc. QASMBench trades-off between generality and usability, covering the number of qubits ranging from 2 to 60K, and the circuit depth from 4 to 12M. We set most of the benchmarks with qubits less than 16 so they can be directly verified on IBM's public-available quantum machine -- [IBM Quantum Experience](https://quantum-computing.ibm.com/). You may also want to use our Density-Matrix quantum simulator ([DM-Sim](https://github.com/pnnl/DM-Sim)) that can efficiently run on CPU and GPU-clusters. 
 
 
-### OpenQASM
-
-OpenQASM (Open Quantum Assembly Language) is a low-level quantum intermediate representation (IR) for quantum instructions, similar to the traditional *Hardware-Description-Language* (HDL) like Verilog and VHDL. OpenQASM is the open-source unified low-level assembly language for IBM quantum machines publically available on cloud that have been investigated and verified by many existing research works. Several popular quantum software frameworks use OpenQASM as one of their output-formats, including [Qiskit](https://github.com/Qiskit/qiskit), [Cirq](https://github.com/quantumlib/cirq), [Scaffold](https://github.com/epiqc/ScaffCC), [ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ), etc.
-
-#### Qiskit
-The *Quantum Information Software Kit* ([Qiskit](https://github.com/Qiskit/qiskit)) is a quantum software developed by *IBM*. It is based on Python. OpenQASM can be generated from Qiskit via:
-```text
-QuantumCircuit.qasm()
-```
-
-#### Cirq
-[Cirq](https://github.com/quantumlib/cirq) is a quantum software framework from *Google*. OpenQASM can be generated from Cirq (not fully compatible) via:
-```text
-cirq.Circuit.to_qasm()
-```
-
-#### Scaffold
-[Scaffold](https://github.com/epiqc/ScaffCC) is a quantum programming language embedded in the C/C++ programming language based on the [LLVM](https://github.com/llvm/llvm-project) compiler toolchain. A Scaffold program can be compiled by [Scaffcc](https://arxiv.org/pdf/1507.01902.pdf) to OpenQASM via "**-b**" compiler option.
-
-#### ProjectQ
-[ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ) is a quantum software platform developed by *Steiger et al.* from ETH Zurich. The official website is [here](https://projectq.ch/). ProjectQ can generate OpenQASM when using IBM quantum machines as the backends:
-```text
-IBMBackend.get_qasm()
-```
-
 ## QASMBench Benchmarks
 Depending on the number of qubits used, QASMBench includes three categories. For the introduction of the benchmarking routines under each category, please see our paper for detail. For each benchmark in the following tables, we list its name, brief description, and the algorithm category it belongs to, which is based on this Nature [paper](https://www.nature.com/articles/npjqi201523) by adding the categories of quantum arithmetic, quantum machine learning and quantum communication.
 
@@ -151,11 +126,46 @@ Some of the large-scale benchmarks can be validated on IBM simulators.
 
 You may also want to use our density-matrix quantum circuit simulator [DM-Sim](https://github.com/pnnl/DM-Sim) for simulating the QASMBench benchmark circuits efficiently on modern CPU (Intel X86, AMD X86, IBM Power), GPU (NVIDIA GPU and AMD GPU) and Xeon-Phi workstations or clusters ORNL Summit, ANL Theta, and NERSC Cori Supercomputers. 
 
+
+
+
+### OpenQASM
+
+OpenQASM (Open Quantum Assembly Language) is a low-level quantum intermediate representation (IR) for quantum instructions, similar to the traditional *Hardware-Description-Language* (HDL) like Verilog and VHDL. OpenQASM is the open-source unified low-level assembly language for IBM quantum machines publically available on cloud that have been investigated and verified by many existing research works. Several popular quantum software frameworks use OpenQASM as one of their output-formats, including [Qiskit](https://github.com/Qiskit/qiskit), [Cirq](https://github.com/quantumlib/cirq), [Scaffold](https://github.com/epiqc/ScaffCC), [ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ), etc.
+
+#### Qiskit
+The *Quantum Information Software Kit* ([Qiskit](https://github.com/Qiskit/qiskit)) is a quantum software developed by *IBM*. It is based on Python. OpenQASM can be generated from Qiskit via:
+```text
+QuantumCircuit.qasm()
+```
+
+#### Cirq
+[Cirq](https://github.com/quantumlib/cirq) is a quantum software framework from *Google*. OpenQASM can be generated from Cirq (not fully compatible) via:
+```text
+cirq.Circuit.to_qasm()
+```
+
+#### Scaffold
+[Scaffold](https://github.com/epiqc/ScaffCC) is a quantum programming language embedded in the C/C++ programming language based on the [LLVM](https://github.com/llvm/llvm-project) compiler toolchain. A Scaffold program can be compiled by [Scaffcc](https://arxiv.org/pdf/1507.01902.pdf) to OpenQASM via "**-b**" compiler option.
+
+#### ProjectQ
+[ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ) is a quantum software platform developed by *Steiger et al.* from ETH Zurich. The official website is [here](https://projectq.ch/). ProjectQ can generate OpenQASM when using IBM quantum machines as the backends:
+```text
+IBMBackend.get_qasm()
+```
+
+
+
+
 ## Authors 
 
 #### [Ang Li](http://www.angliphd.com/), Pacific Northwest National Laboratory (PNNL)
 
+#### [Samuel Stein](https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=10490), Pacific Northwest National Laboratory (PNNL)
+
 #### [Sriram Krishnamoorthy](https://hpc.pnl.gov/people/sriram/), Pacific Northwest National Laboratory (PNNL)
+
+#### [James Ang](https://www.pnnl.gov/people/james-ang), Pacific Northwest National Laboratory (PNNL)
 
 And also the original authors that developed these quantum routines. 
 
@@ -164,15 +174,15 @@ And also the original authors that developed these quantum routines.
 
 For research articles, please cite our paper:
 
-- Ang Li, Sriram Krishnamoorthy, "QASMBench: A Low-level QASM Benchmark Suite for NISQ Evaluation and Simulation" [[arXiv:2005.13018]](https://arxiv.org/abs/2005.13018).
+- Ang Li, Samuel Stein, Sriram Krishnamoorthy and James Ang, "QASMBench: A Low-level QASM Benchmark Suite for NISQ Evaluation and Simulation" [[arXiv:2005.13018]](https://arxiv.org/abs/2005.13018).
 
 Bibtex:
 ```text
-@article{li2020qasmbench,
+@article{li2021qasmbench,
     title={QASMBench: A Low-level QASM Benchmark Suite for NISQ Evaluation and Simulation},
-    author={Li, Ang and Krishnamoorthy, Sriram},
+    author={Li, Ang and Stein, Samuel and Krishnamoorthy, Sriram and Ang, James},
     journal={arXiv preprint arXiv:2005.13018},
-    year={2020}
+    year={2021}
 }
 
 ```
@@ -184,7 +194,9 @@ This project is licensed under the BSD License, see [LICENSE](LICENSE) file for 
 
 ## Acknowledgments
 
-We thank the many developers and open-source community for providing these awesome quantum circuits online so we are able to collect and form this benchmark suite. This work was originally supported by PNNL's *Quantum Algorithms, Software, and Architectures* (QUASAR) LDRD Initiative. It is now supported by U.S. DOE *Co-design Center for Quantum Advantage* ([C2QA](https://www.bnl.gov/quantumcenter/)) Quantum Information Science (QIS) center XCITe crosscut. The Pacific Northwest National Laboratory (PNNL) is operated by Battelle for the U.S. Department of Energy (DOE) under contract DE-AC05-76RL01830. 
+We thank the many developers and open-source community for providing these awesome quantum circuits online so we are able to collect and form this benchmark suite. 
+
+This work is supported by U.S. DOE *Co-design Center for Quantum Advantage* ([C2QA](https://www.bnl.gov/quantumcenter/)) Quantum Information Science (QIS) center XCITe crosscut. The Pacific Northwest National Laboratory (PNNL) is operated by Battelle for the U.S. Department of Energy (DOE) under contract DE-AC05-76RL01830. 
 
 ## Contributing
 
