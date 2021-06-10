@@ -2,7 +2,7 @@
 
 QASMBench is an OpenQASM benchmark suite for NISQ evaluation. The .qasm code can be directly loaded in [IBM Quantum Experience](https://quantum-computing.ibm.com/) for execution. Please see our ([paper](qasmbench.pdf) or [arXiv](https://arxiv.org/abs/2005.13018)) for details.
 
-![alt text](example.png)
+![alt text](img/example.png)
 
 ## Current version
 
@@ -160,9 +160,7 @@ Circuit width is defined as the number of qubits that enter the superposition st
 
 
 The following figure show the circuit width of QASMBench:
-![alt text](circuit_width.png)
-
-
+![alt text](img/circuit_width.png)
 
 
 
