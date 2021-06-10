@@ -1,17 +1,20 @@
 # QASMBench Benchmark Suite
 
-An OpenQASM benchmark suite for NISQ evaluation. The .qasm code can be directly loaded in [IBM Quantum Experience](https://quantum-computing.ibm.com/) for execution. Please see our paper ([attached](qasmbench.pdf) and [arXiv](https://arxiv.org/abs/2005.13018)) for details.
+QASMBench is an OpenQASM benchmark suite for NISQ evaluation. The .qasm code can be directly loaded in [IBM Quantum Experience](https://quantum-computing.ibm.com/) for execution. Please see our ([paper](qasmbench.pdf) or [arXiv](https://arxiv.org/abs/2005.13018)) for details.
 
 ![alt text](example.png)
 
 ## Current version
 
-Latest version: **1.2**
+Latest version: **1.3**
 
 ## About QASMBench
 
-In this repository you will find a light-weighted benchmark suite based on IBM [OpenQASM](https://github.com/Qiskit/openqasm) language (see [spec](https://arxiv.org/pdf/1707.03429.pdf)). It collects commonly seen quantum algorithms and routines from various domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc. QASMBench trades-off between generality and usability, covering the number of qubits ranging from 2 to 60K, and the circuit depth from 4 to 12M. We set most of the benchmarks with qubits less than 16 so they can be directly verified on IBM's public-available quantum machine -- [IBM Quantum Experience](https://quantum-computing.ibm.com/). You may also want to use our Density-Matrix quantum simulator ([DM-Sim](https://github.com/pnnl/DM-Sim)) that can efficiently run on CPU and GPU-clusters. 
 
+The rapid development of quantum computing (QC) in the NISQ era urgently demands a light-weighted, low-level benchmark suite and insightful evaluation metrics for characterizing the properties of prototype NISQ devices, the efficiency of QC programming compilers, schedulers and assemblers, and the capability of quantum simulators in a classical computer. We propose QASMBench as a low-level, easy-to-use benchmark suite based on the [OpenQASM](https://github.com/Qiskit/openqasm) assembly representation. It consolidates commonly used quantum routines and kernels from a variety of domains including chemistry, simulation, linear algebra, searching, optimization, arithmetic, machine learning, fault tolerance, cryptography, etc., trading-off between generality and usability. Most of the QASMBench application code can be launched and verified in [IBM-Q](https://quantum-computing.ibm.com/) directly. For simulation purposes, you may also want to use our State-Vector simulator ([SV-Sim](https://github.com/pnnl/SV-Sim)) and Density-Matrix simulator ([DM-Sim](https://github.com/pnnl/DM-Sim)) to run on GPU/CPU HPC clusters.
+
+
+To analyze these kernels in terms of NISQ device execution, in addition to circuit width and depth, we propose four circuit metrics including gate density, retention lifespan, measurement density, and entanglement variance, to extract more insights about the execution efficiency, the susceptibility to NISQ error, and the potential gain from machine-specific optimizations. We provide script under the **metric** folder to analyze the OpenQASM circuit and report the metrics we defined. 
 
 ## QASMBench Benchmarks
 Depending on the number of qubits used, QASMBench includes three categories. For the introduction of the benchmarking routines under each category, please see our paper for detail. For each benchmark in the following tables, we list its name, brief description, and the algorithm category it belongs to, which is based on this Nature [paper](https://www.nature.com/articles/npjqi201523) by adding the categories of quantum arithmetic, quantum machine learning and quantum communication.
@@ -112,20 +115,14 @@ Each benchmark folder include the following file:
 - bench.qasm: OpenQASM source file.
 - bench.png: Visualization of the circuit from IBM QE.
 - res_bench.png: Running results from IBM QE quantum backends (mainly 5-qubit Burlington, 15-qubit Melbourne, and 27-qubit Paris).
-- bench.cuh: Source file for our [DM-Sim](https://github.com/pnnl/DM-Sim) quantum simulator.
 
 ## Tests
 
-The small-scale benchmarks (except basis-trotter) can be directly uploaded and verified on real Quantum Machines [IBM Quantum Experience](https://quantum-computing.ibm.com/).
-
-The medium-scale benchmarks can be either validated by real quantum machines or simulators in [IBM Quantum Experience](https://quantum-computing.ibm.com/).
-
-Some of the large-scale benchmarks can be validated on IBM simulators. 
+The QASMBench circuits can be directly uploaded and verified on [IBM-Q](https://quantum-computing.ibm.com/) NISQ quantum device.
 
 ## DM-Sim simulation
 
-You may also want to use our density-matrix quantum circuit simulator [DM-Sim](https://github.com/pnnl/DM-Sim) for simulating the QASMBench benchmark circuits efficiently on modern CPU (Intel X86, AMD X86, IBM Power), GPU (NVIDIA GPU and AMD GPU) and Xeon-Phi workstations or clusters ORNL Summit, ANL Theta, and NERSC Cori Supercomputers. 
-
+You may also want to use our state-vector and density-matrix quantum circuit simulator ([SV-Sim](https://github.com/pnnl/SV-Sim) and [DM-Sim](https://github.com/pnnl/DM-Sim)) for simulating the QASMBench benchmark circuits efficiently on modern CPU (Intel X86, AMD X86, IBM Power), GPU (NVIDIA GPU and AMD GPU) and Xeon-Phi workstations or HPC clusters (e.g., ORNL Summit/Frontier, ANL Theta, and NERSC Cori/Perlmutter Supercomputers). 
 
 
 
@@ -154,6 +151,40 @@ cirq.Circuit.to_qasm()
 IBMBackend.get_qasm()
 ```
 
+## Metrics
+We propose a set of circuit based evaluation metrics representing various features of a quantum application. These metrics are designed such that through them certain estimation can be performed on executing a particular circuit over a particular NISQ device. The metrics serve as useful indicators on how a quantum circuit can stress a NISQ hardware device. Please see our [paper](qasmbench.pdf) for the math formula.
+
+### Circuit Width
+
+Circuit width is defined as the number of qubits that enter the superposition state at least once within an application’s lifespan. Qubits that are measured in the interim of a circuit and re-enter superposition are only counted as one qubit towards the circuit width. Circuit width dictates the spatial capacity required for a quantum device in order to run the quantum circuit. 
+
+
+The following figure show the circuit width of QASMBench:
+![alt text](circuit_width.png)
+
+
+
+
+
+### Circuit Depth
+
+Circuit depth is defined as the minimum time-evolution steps required to complete a quantum application. Time evolution is the process of completing all gates defined at time T=T(j), and once these are completed, the circuit moves onto time T = T(j+1), where the following gates are to be processed. Circuit depth can be computed by decomposing OpenQASM code into a n(q) x T matrix Q, where Q(q(i),t(j)) is the time-evolution steps to complete the gate on qubit i at time j. The sum of the maximum time in each column is then equal to the minimum time required for a quantum application.
+
+### Gate Density
+
+Gate density, or operation density, describes the occupancy of gate slots along the time-evolution steps of a quantum circuit. As certain qubits might need to wait for other qubits in the time evolution (i.e, gate dependency), they remain idle by executing the identity gate (ID gate). Consequently, if a gate slot is empty due to dependency, it implies a lower occupancy for the quantum hardware. This is similar to a classical processor, where data dependency introduces pipeline bubbles and reduced occupancy. We propose Gate Density to measure the likely occupancy of a circuit when mapping to a quantum hardware.
+
+### Retention Lifespan
+
+Retention Lifespan describes the maximum lifespan of a qubit within a system, and is motivated by the T1 and T2 coherence time of a quantum device. A longer lifespan of a quantum system implies more decay to the ground state (T1) and state-transition due to environment noise (T2), thus is more susceptible to information loss. Therefore, we propose taking the qubit with the longest lifespan to determine the system’s retention lifespan. Using this metric, one can estimate if a particular circuit can be executed in a NISQ device with high fidelity, given its T1/T2 coherence time. Note, all IBM-Q machines offer T1/T2 coherence time as status indicators for the hardware. As circuit depth can grow substantially, we introduce the log operator to shrink the scale.
+
+### Measurement Density
+
+Measurement density assesses the importance of measurements in a circuit. A higher measurement count implies the fact that each measurement might be of relatively less importance (e.g., periodic measurement in QEC, or measurement over ancilla qubits), whereas for application with less measurements, the measurement may be of utmost importance. The importance also increases when a measurement accounts for a wider and/or deeper circuit. A good example is the SWAP test, where the circuit can be very large but only one measurement is taken to report the similarity. Consequently, this measurement is extremely important to the application. Since the circuit depth/width can be large and the importance of measurement decays when circuit depth/width keeps on increasing, we add a log to shrink the scale.
+
+### Entanglement Variance
+
+Entanglement Variance measures the balance of entanglement across the qubits of a circuit. Circuits with a higher Entanglement Variance indicate that certain qubits are more connected than other qubits (i.e., using more 2-qubit gates such as CX than others). This metric implies that when the circuit is mapped to a NISQ device: (i) less SWAP gates are needed if those hotspot qubits are mapped to the central vertices in the NISQ device topology, such as Qubit-1 in ibmq-belem and Qubit-2 in ibmq-yorkton). A higher entanglement variance implies a higher potential benefit from a good logic-physical qubit-mapping through quantum transpilation. If the entanglement variance is zero, little benefit should be expected from a better transpilation strategy; (ii) Given 2-qubit gate is one of the major sources introducing error, a higher Entanglement Variance implies uneven error introduction among qubits.
 
 
 
@@ -196,7 +227,10 @@ This project is licensed under the BSD License, see [LICENSE](LICENSE) file for 
 
 We thank the many developers and open-source community for providing these awesome quantum circuits online so we are able to collect and form this benchmark suite. 
 
+PNNL-IPID: 31924-E, IR: PNNL-SA-153380, PNNL-SA-162867, ECCN:EAR99
+
 This work is supported by U.S. DOE *Co-design Center for Quantum Advantage* ([C2QA](https://www.bnl.gov/quantumcenter/)) Quantum Information Science (QIS) center XCITe crosscut. The Pacific Northwest National Laboratory (PNNL) is operated by Battelle for the U.S. Department of Energy (DOE) under contract DE-AC05-76RL01830. 
+
 
 ## Contributing
 
