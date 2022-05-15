@@ -233,7 +233,12 @@ We thank the many developers and open-source community for providing these aweso
 
 PNNL-IPID: 31924-E, IR: PNNL-SA-153380, PNNL-SA-162867, ECCN:EAR99
 
-This work is supported by U.S. DOE *Co-design Center for Quantum Advantage* ([C2QA](https://www.bnl.gov/quantumcenter/)) Quantum Information Science (QIS) center XCITe crosscut. The Pacific Northwest National Laboratory (PNNL) is operated by Battelle for the U.S. Department of Energy (DOE) under contract DE-AC05-76RL01830. 
+This work was supported by the DOE Office of Science National Quantum Information Science Research Centers, Co-design Center for Quantum Advantage ([C2QA](https://www.bnl.gov/quantumcenter/)) under contract number DE-SC0012704.
+This research used resources of the Oak Ridge Leadership Computing Facility, which is a DOE Office of Science User Facility supported under
+Contract DE-AC05-00OR22725. 
+We also acknowledge support from Microsoft’s Azure Quantum for providing credits and access to the ion-trap quantum hardware used in our evaluation.
+The Pacific Northwest National Laboratory is operated by Battelle for the U.S. Department of Energy under contract DE-AC05-76RL01830. 
+
 
 
 ## Contributing
