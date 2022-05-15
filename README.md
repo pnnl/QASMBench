@@ -1,6 +1,8 @@
 # QASMBench Benchmark Suite
 
-QASMBench is an OpenQASM benchmark suite for NISQ evaluation. The .qasm code can be directly loaded in [IBM Quantum Experience](https://quantum-computing.ibm.com/) for execution. Please see our ([paper](qasmbench.pdf) or [arXiv](https://arxiv.org/abs/2005.13018)) for details.
+QASMBench is an OpenQASM benchmark suite for NISQ evaluation. The .qasm code can be directly loaded in [IBM Quantum Experience](https://quantum-computing.ibm.com/) for execution. Please see our paper ([local](qasmbench.pdf) or on [arXiv](https://arxiv.org/abs/2005.13018)) for details.
+
+If you need specialized circuits with the nubmer of qubits being configurable, or circuits in alternative representations such as Cirq, QSharp, Qiskit, PyQuil, please see our [NWQBench](https://github.com/pnnl/nwqbench).
 
 ![alt text](img/example.png)
 
