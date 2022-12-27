@@ -65,14 +65,14 @@ Qunatum circuits using **2 to 10** qubits.
 | simons | Simon’s algorithm | Hidden Subgroup | 6 | 44 | 14 | [AgentANAKIN](https://github.com/AgentANAKIN/Simon-s-Algorithm) |
 | qaoa | Quantum approximate optimization algorithm | Search and Optimization | 6 | 270 | 54 | [Cirq](https://github.com/quantumlib/cirq) |
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 6 | 2282 | 1052 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-| hhl    |   |  |  7 | |  |[Qiskit HHL](https://qiskit.org/textbook/ch-applications/hhl_tutorial.html)|
+| hhl  | Using HHL algorithm to solve linear system of equations  | Linear Equation  | 7 | 689 | 196 |[Qiskit HHL](https://qiskit.org/textbook/ch-applications/hhl_tutorial.html)|
 | bb84 | A quantum key distribution circuit | Quantum Communication | 8 | 27 | 0 | [Cirq](https://github.com/quantumlib/cirq) |
 | dnn | 16-dimension quantum neural network sample | Machine Learning | 8 | 1008 | 192 | [Ref](https://arxiv.org/abs/2012.00256) |
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 8 | 10808 | 5488 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | qpe | Quantum phase estimation algorithm | Hidden Subgroup | 9 | 123 | 43 | [AgentANAKIN](https://github.com/AgentANAKIN/Quantum-Phase-Estimation) |
 | adder | Quantum ripple-carry adder | Quantum Arithmetic | 10 | 142 | 65 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | ising | Ising model simulation via QC | Quantum Simulation | 10 | 480 | 90 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-| hhl    |   |  |  10 | |  |[Qiskit HHL](https://qiskit.org/textbook/ch-applications/hhl_tutorial.html)|
+| hhl   | Using HHL algorithm to solve linear system of equations  | Linear Equation | 10 | 186795 | 72449 |[Qiskit HHL](https://qiskit.org/textbook/ch-applications/hhl_tutorial.html)|
 
 
 
