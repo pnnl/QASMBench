@@ -74,64 +74,55 @@ Qunatum circuits using **2 to 10** qubits.
 | ising | Ising model simulation via QC | Quantum Simulation | 10 | 480 | 90 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | hhl   | Using HHL algorithm to solve linear system of equations  | Linear Equation | 10 | 186795 | 72449 |[Qiskit HHL](https://qiskit.org/textbook/ch-applications/hhl_tutorial.html)|
 
-
-
-
-
-
-
-
-
-
-
 ### Medium-scale
 Quantum circutis using **11 to 27** qubits.
 
-
 | Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
-| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 14 | 41 | 13 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| seca | Shor's error correction algorithm for teleportation | Error Correction | 11 | 216 | 84 | [AgentANAKIN](https://github.com/AgentANAKIN/Shors-Error-Correction-Algorithm) |
+| sat | Boolean satisfiability problem | Search and Optimization | 11 | 679 | 252 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | cc | Counterfeit coin finding problem | Search and Optimization | 12 | 22 | 11 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | multiply | Performing 3×5 in a quantum circuit | Quantum Arithmetic | 13 | 98 | 40 | [AgentANAKIN](https://github.com/AgentANAKIN/Quantum-Multiplication) |
+| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 14 | 41 | 13 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | qf21 | Using quantum phase estimation to factor the number 21 | Hidden Subgroup | 15 | 311 | 115 | [AgentANAKIN](https://github.com/AgentANAKIN/Quantum-Factoring-21) |
-| qft | Quantum Fourier transform | Hidden Subgroup | 15 | 540 | 210 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| sat | Boolean satisfiability problem | Search and Optimization | 11 | 679 | 252 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| seca | Shor's error correction algorithm for teleportation | Error Correction | 11 | 216 | 84 | [AgentANAKIN](https://github.com/AgentANAKIN/Shors-Error-Correction-Algorithm) |
 | multiplier | Quantum multiplier | Quantum Arithmetic | 15 | 574 | 246 | [Cirq](https://github.com/quantumlib/cirq) |
 | dnn | quantum neural network sample | Machine Learning | 16 | 2016 | 384 | [Ref](https://arxiv.org/abs/2012.00256) |
+| qec9xz | Quantum error correction 9-qubit code | Error Correction | 17 | 53 | 32 | [Ref](https://arxiv.org/pdf/0905.2794.pdf) |
+| qft | Quantum Fourier transform | Hidden Subgroup | 18 | 783 | 306 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | bigadder | Quantum ripple-carry adder | Quantum Arithmetic | 18 | 284 | 130 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| cc | Counterfeit coin finding problem via QC | Hidden Subgroup | 18 | 34 | 17 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 18 | 2300 | 898 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 19 | 56 | 18 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| qft | Quantum Fourier tranform | Hidden Subgroup | 20 | 970 | 380 | [OpenQASM](https://github.com/Qiskit/openqasm) |
+| qram | Bucket brigade qRAM prototype circuit | Quantum Architecture | 20 | 223 | 92 | [Ref](https://iopscience.iop.org/article/10.1088/1367-2630/17/12/123010/pdf) |
 | bwt | Binary Welded Tree: a quantum walk algorithm in continuous time domain | Quantum Walk | 21 | 462001 | 174800 | QASMBench |
 | cat_state | Coherent superposition of two coherent states with opposite phase | Logical Operation | 22 | 22 | 21 | QASMBench |
 | ghz_state | Greenberger-Horne-Zeilinger (GHZ) state for max entanglement | Logical Operation | 23 | 23 | 22 | QASMBench |
-| ising | Ising model simulation via QC | Quantum Simulation | 26 | 280 | 50 | QASMBench |
-| multiplier | Quantum multiplier | Quantum Arithmetic | 25 | 1743 | 750 | [Cirq](https://github.com/quantumlib/cirq) |
-| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 18 | 2300 | 898 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-| swap_test | Swap test to measure quantum state distance | Machine Learning | 25 | 230 | 96 | QASMBench |
 | vqe | Variational quantum eigensolver with UCCSD | Quantum Simulation | 24 | 2306072 | 1538240 | QASMBench |
-
-
-| qram | Bucket brigade qRAM prototype circuit | Quantum Architecture | 20 |  |  | [Ref](https://iopscience.iop.org/article/10.1088/1367-2630/17/12/123010/pdf) |
-
+| swap_test | Swap test to measure quantum state distance | Machine Learning | 25 | 230 | 96 | QASMBench |
+| knn | Quantum K-nearest neighbor | Search and Optimization | 25 | 230 | 96 | [Ref](https://arxiv.org/pdf/2003.09187.pdf) |
+| ising | Ising model simulation via QC | Quantum Simulation | 26 | 280 | 50 | QASMBench |
+| wstate |  W-state preparation and assessment | Logical Operation | 27 | 157 | 52 | QASMBench |
 
 ### Large-scale
-Quantum circuits using more than **27 to 433** qubits.
+Quantum circuits using more than **28 to 433** qubits.
 
 | Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
-| ising | Ising model simulation via QC | Quantum Simulation | 500 | 5494 | 998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-| ising | Ising model simulation via QC | Quantum Simulation | 1000 | 10994 | 1998 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-| class_number | Compute the class group of a real quadratic number field | Hidden Subgroups | 60052 | 31110504 | 12460637 | [Scaffold](https://github.com/epiqc/ScaffCC) |
-
-28,65,127,433
-
-
-
-
-
-
+| vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 28 | 399482 | 296648 | QASMBench |
+| adder | Quantum adder | Quantum Arithmetic | 28/64/118/433 | 424/988/1834/6769 | 195/455/845/3120 | QASMBench |
+| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 30/70/140/280 | 78/176/352/712 | 18/36/72/152 | QASMBench |
+| bwt | Binary Welded Tree: a quantum walk algorithm in continuous time domain | Quantum Walk | 37/57/97/177 | 1649201/3145201/6113201/12049201 | 632400/1209200/2353200/4641200 | QASMBench |
+| cat | Coherent superposition of two coherent states with opposite phase | Logical Operation | 35/65/130/260 | 35/65/130/260 | 34/64/129/259 | QASMBench |
+| cc | Counterfeit coin finding problem | Search and Optimization | 32/64/151/301 | 62/126/300/600 | 31/63/150/300 | QASMBench |
+| dnn | quantum neural network sample | Machine Learning | 33/51 | 608/959  | 248/392  | [Ref](https://arxiv.org/abs/2012.00256) |
+| ghz | Greenberger-Horne-Zeilinger (GHZ) state for max entanglement | Logical Operation | 40/78/127/255 | 40/78/127/255 | 39/77/126/254  | QASMBench |
+| ising | Ising model simulation via QC | Quantum Simulation | 34/66/98/420 | 368/720/1072/4614 | 66/130/194/838  | QASMBench |
+| knn | Quantum K-nearest neighbor | Search and Optimization | 31/67/129/341 | 287/629/1218/3232 | 120/264/512/1260 | [Ref](https://arxiv.org/pdf/2003.09187.pdf) |
+| multiplier | Quantum multiplier | Quantum Arithmetic | 45/75/350/400 | 5981/17077/383844/501877 | 2574/7350/165200/216000  |  QASMBench |
+| qft | Quantum Fourier transform | Hidden Subgroupe | 29/63/160/320 | 2059/9828/63760/255520 | 812/3906/25440/102080 |  QASMBench |
+| qugan | Quantum generative adversarial network | Machine Learning | 39/71/111/395 | 759/1415/2235/8057 | 296/552/872/3144 | [Ref](https://arxiv.org/abs/2010.09036) |
+| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 45/60  | 138794/1061939  | 54151/415123 |  QASMBench |
+| swap_test | Swap test to measure quantum state distance | Machine Learning | 41/83/115/361 | 382/781/1085/3422 | 160/328/456/1440 | QASMBench |
+| wstate |  W-state preparation and assessment | Logical Operation | 36/76/118/380 | 211/451/703/2275 | 70/150/234/758 | QASMBench |
 
 
 

@@ -12,7 +12,7 @@ cx c,t;
 u1 (3*pi/8) t;
 cx c,t;
 }
-gate cu c,t {
+gate ctu c,t {
 cu1fixed c,t;
 }
 
@@ -20,21 +20,21 @@ h q[0];
 h q[1];
 h q[2];
 h q[3];
-cu q[3],q[4];
-cu q[2],q[4];
-cu q[2],q[4];
-cu q[1],q[4];
-cu q[1],q[4];
-cu q[1],q[4];
-cu q[1],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
-cu q[0],q[4];
+ctu q[3],q[4];
+ctu q[2],q[4];
+ctu q[2],q[4];
+ctu q[1],q[4];
+ctu q[1],q[4];
+ctu q[1],q[4];
+ctu q[1],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
+ctu q[0],q[4];
 h q[0];
 cu1(-pi/2) q[0],q[1];
 h q[1];
