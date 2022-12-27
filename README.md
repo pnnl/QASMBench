@@ -18,7 +18,7 @@ The rapid development of quantum computing (QC) in the NISQ era urgently demands
 To analyze these kernels in terms of NISQ device execution, in addition to circuit width and depth, we propose four circuit metrics including gate density, retention lifespan, measurement density, and entanglement variance, to extract more insights about the execution efficiency, the susceptibility to NISQ error, and the potential gain from machine-specific optimizations. We provide script under the **metric** folder to analyze the OpenQASM circuit and report the metrics we defined. 
 
 ## QASMBench Benchmarks
-Depending on the number of qubits used, QASMBench includes three categories. For the introduction of the benchmarking routines under each category, please see our paper for detail. For each benchmark in the following tables, we list its name, brief description, and the algorithm category it belongs to, which is based on this Nature [paper](https://www.nature.com/articles/npjqi201523) by adding the categories of quantum arithmetic, quantum machine learning and quantum communication. For the next 5 years, we plan to update QASMBench with respect to [IBMQ roadmap](https://research.ibm.com/blog/ibm-quantum-roadmap-2025).
+Depending on the number of qubits used, QASMBench includes three categories. For the introduction of the benchmarking routines under each category, please see our paper for detail. For each benchmark in the following tables, we list its name, brief description, and the algorithm category it belongs to, which is based on this Nature [paper](https://www.nature.com/articles/npjqi201523) by adding the categories of quantum arithmetic, quantum machine learning and quantum communication. We try to update QASMBench with respect to [IBMQ roadmap](https://research.ibm.com/blog/ibm-quantum-roadmap-2025).
 
 
 ![alt text](img/ibmq_roadmap.png)
@@ -108,21 +108,21 @@ Quantum circuits using more than **28 to 433** qubits.
 | Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 28 | 399482 | 296648 | QASMBench |
-| adder | Quantum adder | Quantum Arithmetic | 28/64/118/433 | 424/988/1834/6769 | 195/455/845/3120 | QASMBench |
-| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 30/70/140/280 | 78/176/352/712 | 18/36/72/152 | QASMBench |
-| bwt | Binary Welded Tree: a quantum walk algorithm in continuous time domain | Quantum Walk | 37/57/97/177 | 1649201/3145201/6113201/12049201 | 632400/1209200/2353200/4641200 | QASMBench |
-| cat | Coherent superposition of two coherent states with opposite phase | Logical Operation | 35/65/130/260 | 35/65/130/260 | 34/64/129/259 | QASMBench |
-| cc | Counterfeit coin finding problem | Search and Optimization | 32/64/151/301 | 62/126/300/600 | 31/63/150/300 | QASMBench |
-| dnn | quantum neural network sample | Machine Learning | 33/51 | 608/959  | 248/392  | [Ref](https://arxiv.org/abs/2012.00256) |
-| ghz | Greenberger-Horne-Zeilinger (GHZ) state for max entanglement | Logical Operation | 40/78/127/255 | 40/78/127/255 | 39/77/126/254  | QASMBench |
-| ising | Ising model simulation via QC | Quantum Simulation | 34/66/98/420 | 368/720/1072/4614 | 66/130/194/838  | QASMBench |
-| knn | Quantum K-nearest neighbor | Search and Optimization | 31/67/129/341 | 287/629/1218/3232 | 120/264/512/1260 | [Ref](https://arxiv.org/pdf/2003.09187.pdf) |
-| multiplier | Quantum multiplier | Quantum Arithmetic | 45/75/350/400 | 5981/17077/383844/501877 | 2574/7350/165200/216000  |  QASMBench |
-| qft | Quantum Fourier transform | Hidden Subgroupe | 29/63/160/320 | 2059/9828/63760/255520 | 812/3906/25440/102080 |  QASMBench |
-| qugan | Quantum generative adversarial network | Machine Learning | 39/71/111/395 | 759/1415/2235/8057 | 296/552/872/3144 | [Ref](https://arxiv.org/abs/2010.09036) |
-| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 45/60  | 138794/1061939  | 54151/415123 |  QASMBench |
-| swap_test | Swap test to measure quantum state distance | Machine Learning | 41/83/115/361 | 382/781/1085/3422 | 160/328/456/1440 | QASMBench |
-| wstate |  W-state preparation and assessment | Logical Operation | 36/76/118/380 | 211/451/703/2275 | 70/150/234/758 | QASMBench |
+| adder | Quantum adder | Quantum Arithmetic | 28, 64, 118, 433 | 424, 988, 1834, 6769 | 195, 455, 845, 3120 | QASMBench |
+| bv | Bernstein-Vazirani algorithm | Hidden Subgroup | 30, 70, 140, 280 | 78, 176, 352, 712 | 18, 36, 72, 152 | QASMBench |
+| bwt | Binary Welded Tree: a quantum walk algorithm in continuous time domain | Quantum Walk | 37, 57, 97, 177 | 1649201, 3145201, 6113201, 12049201 | 632400, 1209200, 2353200, 4641200 | QASMBench |
+| cat | Coherent superposition of two coherent states with opposite phase | Logical Operation | 35, 65, 130, 260 | 35, 65, 130, 260 | 34, 64, 129, 259 | QASMBench |
+| cc | Counterfeit coin finding problem | Search and Optimization | 32, 64, 151, 301 | 62, 126, 300, 600 | 31, 63, 150, 300 | QASMBench |
+| dnn | quantum neural network sample | Machine Learning | 33, 51 | 608, 959  | 248, 392  | [Ref](https://arxiv.org/abs/2012.00256) |
+| ghz | Greenberger-Horne-Zeilinger (GHZ) state for max entanglement | Logical Operation | 40, 78, 127, 255 | 40, 78, 127, 255 | 39, 77, 126, 254  | QASMBench |
+| ising | Ising model simulation via QC | Quantum Simulation | 34, 66, 98, 420 | 368, 720, 1072, 4614 | 66, 130, 194, 838  | QASMBench |
+| knn | Quantum K-nearest neighbor | Search and Optimization | 31, 67, 129, 341 | 287, 629, 1218, 3232 | 120, 264, 512, 1260 | [Ref](https://arxiv.org/pdf/2003.09187.pdf) |
+| multiplier | Quantum multiplier | Quantum Arithmetic | 45, 75, 350, 400 | 5981, 17077, 383844, 501877 | 2574, 7350, 165200, 216000  |  QASMBench |
+| qft | Quantum Fourier transform | Hidden Subgroupe | 29, 63, 160, 320 | 2059, 9828, 63760, 255520 | 812, 3906, 25440, 102080 |  QASMBench |
+| qugan | Quantum generative adversarial network | Machine Learning | 39, 71, 111, 395 | 759, 1415, 2235, 8057 | 296, 552, 872, 3144 | [Ref](https://arxiv.org/abs/2010.09036) |
+| square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 45, 60  | 138794, 1061939  | 54151, 415123 |  QASMBench |
+| swap_test | Swap test to measure quantum state distance | Machine Learning | 41, 83, 115, 361 | 382, 781, 1085, 3422 | 160, 328, 456, 1440 | QASMBench |
+| wstate |  W-state preparation and assessment | Logical Operation | 36, 76, 118, 380 | 211, 451, 703, 2275 | 70, 150, 234, 758 | QASMBench |
 
 
 
@@ -227,7 +227,9 @@ And also the original authors that developed these quantum routines.
 
 For research articles, please cite our paper:
 
-- Ang Li, Samuel Stein, Sriram Krishnamoorthy and James Ang, "QASMBench: A Low-level QASM Benchmark Suite for NISQ Evaluation and Simulation", ACM Transactions on Quantum Computing, DOI:[10.1145/3550488](https://doi.org/10.1145/3550488), [[arXiv:2005.13018]](https://arxiv.org/abs/2005.13018).
+- Ang Li, Samuel Stein, Sriram Krishnamoorthy, and James Ang. "QASMBench: A Low-Level Quantum Benchmark Suite for NISQ Evaluation and Simulation." ACM Transactions on Quantum Computing (2022). [DOI:10.1145/3550488](https://doi.org/10.1145/3550488), [[arXiv:2005.13018]](https://arxiv.org/abs/2005.13018).
+
+
 
 Bibtex:
 ```text
