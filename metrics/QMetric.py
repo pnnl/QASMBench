@@ -28,7 +28,16 @@ import networkx as nx
 # - Number of 1-Qubit gates
 
 class QMetric:
+    """
+    QMetric describes the metric class for analysing QASM. On calling ".evaluate_qasm", the QASM will be evaluated
+    through each of the "compute_...." clauses below under ".evaluate_qasm". To change any of the tags that it generates,
+    or if you need to change the metrics being calculated, look under evaluate_qasm().
+    """
     def __init__(self, qasm):
+        """
+        QMetric initialisation function. Gate tables are populated, and QASM preprocessing is performed.
+        :param qasm: QASM string representing the circuit to be analysed.
+        """
         self.qasm = qasm
         # =======  Global tables and variables =========
 
@@ -112,6 +121,9 @@ class QMetric:
         cx_table = {}
         self.circuit = qiskit.QuantumCircuit().from_qasm_str(qasm)
         self.circuit = RemoveBarriers()(self.circuit)
+        """
+        QASM preprocessing and analysis is performed from here onwards.
+        """
         self.collate_gates()
         self.preprocess_qasm()
         self.get_gate_count()
@@ -124,6 +136,10 @@ class QMetric:
         self.get_max_dual_qubit_depth()
 
     def evaluate_qasm(self):
+        """
+        Call this function on a QMetric object to evaluate qasm and compute metrics.
+        :return: A dictionary containing information about the QASM, and respective metrics from SupermarQ and QASMBench
+        """
         self.calc_operation_density()
         self.calc_measurement_density()
         self.calc_fdm()
@@ -179,6 +195,10 @@ class QMetric:
     # Calculate Gate Density,
     # ----------------------------
     def calc_operation_density(self):
+        """
+        Compute Operation Density and set self.operation_density (Known as Gate Density in QASMBench)
+        :return: None
+        """
         circuit_area = self.circ_matrix.shape[0]*self.circ_matrix.shape[1]
         self.operation_density = (self.single_gate_count + 2*self.dual_gate_count)/(self.depth*self.qubit_count)
 
@@ -186,22 +206,37 @@ class QMetric:
     # Calculate Measurement Density,
     # ----------------------------
     def calc_measurement_density(self):
+        """
+        Compute Measurement Density and set self.measurement_density (Known as Measurement Ratio in QASMBench)
+        :return: None
+        """
         self.measurement_ratio = np.log(self.circ_matrix.shape[0]*self.depth)/self.measurement_count
 
     # ----------------------------
     # Calculate Retention Lifespan
     # ----------------------------
     def calc_fdm(self):
+        """
+        Compute Retention Lifespan from QASMBench and set self.fdm
+        :return: None
+        """
         self.fdm = np.log(self.depth)
 
     def calc_size_factor(self):
+        """
+        Compute Size Factor of circuit
+        :return:  None
+        """
         self.size_factor = np.log(self.gate_count)
-
 
     # ----------------------------
     # Calculate Quantum Area
     # ----------------------------
     def calc_quantum_area(self):
+        """
+        Compute Application Time in time steps (number of "evolutions"), and compute the circuit area
+        :return: None
+        """
         self.application_time = self.circ_matrix.shape[1]
         self.quantum_area = self.application_time*self.qubit_count
 
@@ -209,6 +244,10 @@ class QMetric:
     # Calculate described entanglement variance from QASMBench
     # ----------------------------
     def calc_entanglement_variance(self):
+        """
+        Compute Entanglement Variance as described in QASMBench
+        :return: None
+        """
         avg_cnot = 2*self.dual_gate_count/self.qubit_count
         print(self.dual_gate_count)
         print(self.dual_gate_count_id)
@@ -223,12 +262,20 @@ class QMetric:
     # a QASM operation.
     # ----------------------------
     def get_op(self,line):
+        """
+        :param line: A line of QASM
+        :return: The operation contained in the line of QASM
+        """
         if line.find("(") != -1:
             line = line[:line.find("(")].strip()
         op = line.split(" ")[0].strip()
         return op
 
     def compute_communication(self):
+        """
+        Compute Communication metric as described in SupermarQ
+        :return: None
+        """
         num_qubits = self.qubit_count
         dag = qiskit.converters.circuit_to_dag(self.circuit)
         graph = nx.Graph()
@@ -238,7 +285,11 @@ class QMetric:
         degree_sum = sum([graph.degree(n) for n in graph.nodes])
         self.communication = degree_sum / (num_qubits * (num_qubits - 1))
 
-    def compute_liveness(self) -> float:
+    def compute_liveness(self):
+        """
+        Compute Liveness metric as described in SupermarQ
+        :return: None
+        """
         num_qubits = self.qubit_count
         dag = qiskit.converters.circuit_to_dag(self.circuit)
         dag.remove_all_ops_named("barrier")
@@ -250,12 +301,19 @@ class QMetric:
         self.liveness = np.sum(activity_matrix) / (num_qubits * dag.depth())
 
     def compute_parallelism(self):
-
+        """
+        Compute Parallelism metric as described in SupermarQ
+        :return: None
+        """
         dag = qiskit.converters.circuit_to_dag(self.circuit)
         dag.remove_all_ops_named("barrier")
         self.parallelism = max(1 - (self.circuit.depth() / len(dag.gate_nodes())), 0)
 
     def compute_measurement(self):
+        """
+        Compute Measurement metric as described in SupermarQ
+        :return: None
+        """
         temporary_circuit = self.circuit.copy()
         temporary_circuit.remove_final_measurements()
         dag = qiskit.converters.circuit_to_dag(temporary_circuit)
@@ -273,11 +331,19 @@ class QMetric:
         self.measurement = reset_moments / gate_depth
 
     def compute_entanglement(self):
+        """
+        Compute Entanglement metric as described in SupermarQ
+        :return: None
+        """
         dag = qiskit.converters.circuit_to_dag(self.circuit)
         dag.remove_all_ops_named("barrier")
         self.entanglement = len(dag.two_qubit_ops()) / len(dag.gate_nodes())
 
     def compute_depth(self):
+        """
+        Compute Depth metric as described in SupermarQ
+        :return: None
+        """
         dag = qiskit.converters.circuit_to_dag(self.circuit)
         dag.remove_all_ops_named("barrier")
         n_ed = 0
@@ -300,6 +366,11 @@ class QMetric:
     # in a operation
     # ----------------------------
     def get_qubit_id(self,line):
+        """
+        Search for qubits that are active in a line of QASM code
+        :param line: Line of QASM code
+        :return: Qubits being used in the line of QASM code
+        """
         line = line.strip(';')
         op_qubits = line.split(" ")[1].strip().split(',')
         qubit_ids = []
@@ -313,6 +384,10 @@ class QMetric:
         return qubit_ids
 
     def collate_gates(self):
+        """
+        Preprocessing function for QASM String
+        :return: None
+        """
         gate_def = "gate"
         temporary_qasm = np.array([x.strip() for x in self.qasm.split('\n')])
         start_point,end_point = None,None
@@ -345,9 +420,11 @@ class QMetric:
         temporary_qasm = temporary_qasm[valid_indexes.astype('bool')]
         self.qasm = temporary_qasm
 
-
-
     def preprocess_qasm(self):
+        """
+        Extensive analysis of QASM string. Counts qubits, gets qubit ID's etc. This is the large preprocessing function
+        :return:
+        """
         qreg = "qreg"
         creg = "creg"
         regex_str = '^.*?\[[^\d]*(\d+)[^\d]*\].*$'
@@ -372,7 +449,6 @@ class QMetric:
                 qbit_labelled[str(qubit_id)+str(i)] = i + previous_cap
             t_qubits +=int(qbit_counts)
         # Search for all cbit declaration lines
-
         cbit_count = [x for x in qasm if creg in x]
         cbit_labelled = {}
         # Load all cbits into the cbit count and give them unique IDs
@@ -405,6 +481,10 @@ class QMetric:
         self.processed_qasm = filtered_qasm
 
     def get_gate_count(self):
+        """
+        Count number of gates in QASM. Must be defined in the self.GATE_TABLE
+        :return: 
+        """
         count = 0
         for gate in self.processed_qasm:
             n_qubits = len(self.get_qubit_id(gate))
@@ -417,6 +497,11 @@ class QMetric:
         self.gate_count = count
 
     def get_measure_count(self,qasm_list):
+        """
+        Count number of measurements in a circuit
+        :param qasm_list: QASM string
+        :return: None
+        """
         count = 0
         for gate in qasm_list:
             op = self.get_op(gate)
@@ -425,6 +510,11 @@ class QMetric:
         self.measure_count = count
 
     def get_dual_qubit_gate_count(self):
+        """
+        Count number of dual qubit gate operations in a circuit
+        :param qasm_list: QASM string
+        :return: None
+        """
         count = 0
         self.dual_gate_count_id = {}
         for gate in self.processed_qasm:
@@ -443,6 +533,11 @@ class QMetric:
         self.dual_gate_count = count
 
     def get_dual_qubit_id_gate_count(self,qubit_id):
+        """
+        Count number of dual qubit operations for a given qubit ID such as q0 or q1
+        :param qasm_list: qubit ID
+        :return: None
+        """
         count = 0
         for gate in self.processed_qasm:
             op = self.get_op(gate)
@@ -455,6 +550,10 @@ class QMetric:
         return count
 
     def get_single_qubit_gate_count(self):
+        """
+        Get number of single qubit gates
+        :return:
+        """
         count = 0
         for gate in self.processed_qasm:
             n_qubits = len(self.get_qubit_id(gate))
@@ -467,6 +566,10 @@ class QMetric:
         self.single_gate_count = count
 
     def get_qubit_depths(self):
+        """
+        Get depth of a specific qubit
+        :return:
+        """
         qubit_depth = {}
         for gate in self.processed_qasm:
             op = self.get_op(gate)
@@ -482,6 +585,10 @@ class QMetric:
         self.qubit_depth = qubit_depth
 
     def get_maximum_qubit_depth(self):
+        """
+        Get maximum qubit depth
+        :return:
+        """
         self.get_qubit_depths()
         qubit_depths = self.qubit_depth
         max_value = max(qubit_depths.values())  # maximum value
@@ -492,12 +599,24 @@ class QMetric:
         return max_keys, max_value
 
     def get_total_gate_count(self):
+        """
+        Get total number of gates in QASM
+        :return:
+        """
         self.total_gate_count = self.dual_gate_count + self.single_gate_count
 
     def get_max_dual_qubit_depth(self):
+        """
+        Get largest number of dual qubit gates on a single qubit
+        :return:
+        """
         self.max_dual_qubit_count = self.get_dual_qubit_id_gate_count(self.max_qubit_depth_id)
 
     def get_circuit_matrix(self):
+        """
+        Generate a matrix representing the time evolution of the circuit. 1 represents a qubit being active, 0 inactive.
+        :return:
+        """
         num_qubits = self.qubit_count
         dag = qiskit.converters.circuit_to_dag(self.circuit)
         circ_matrix = np.zeros((num_qubits, dag.depth()))
@@ -510,6 +629,7 @@ class QMetric:
 
     """
     Deprecated Get_circuit_matrix function. New function uses a DAG
+    This logic can be used if a DAG is not available. 
     """
     # def get_circuit_matrix(self):
     #     #2*n+3 is arbitrary, +3 incase it is very small, and 2* to compensate
