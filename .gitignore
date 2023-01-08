@@ -1,0 +1,16 @@
+./Untitled.ipynb
+./TranspileToBasisGates.ipynb
+./transpile_script.py
+./.ipynb_checkpoints/*
+/TranspileToBasisGates.ipynb
+/venv
+/.ipynb_checkpoints
+.DS_Store
+metrics/__pycache__/QMetric.cpython-39.pyc
+metrics/__pycache__/metric_plotter.cpython-39.pyc
+metrics/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+metrics/__pycache__/SupermarqMetrics.cpython-39.pyc
+*.ipynb
+*.xml
+*.iml
+transpile_script.py
