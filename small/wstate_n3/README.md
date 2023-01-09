@@ -1,0 +1,17 @@
+# Application: wstate_n3
+- Qubit Count : 3
+- Circuit Depth : 6
+- Circuit Width : 3
+- Retention Lifespan : 1.791759469228055
+- Gate Density : 3.6666666666666665
+- Dual Gate Count : 9
+- Measurement Density : 0.9634572526320548
+- Size Factor : 4.276666119016055
+- Gate Count : 57
+- Entanglement Variance : 0.9814796597221468
+- Communication Supermarq : 0.3333333333333333
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.3333333333333333
+- Parallelism Supermarq : 0.0
+- Liveness Supermarq : 0.7222222222222222

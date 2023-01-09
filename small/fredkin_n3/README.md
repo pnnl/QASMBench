@@ -1,0 +1,17 @@
+# Application: fredkin_n3
+- Qubit Count : 3
+- Circuit Depth : 12
+- Circuit Width : 3
+- Retention Lifespan : 2.4849066497880004
+- Gate Density : 0.75
+- Dual Gate Count : 8
+- Measurement Density : 1.1945063128187032
+- Size Factor : 3.295836866004329
+- Gate Count : 19
+- Entanglement Variance : 0.4330943280434203
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.875
+- Entanglement Supermarq : 0.42105263157894735
+- Parallelism Supermarq : 0.368421052631579
+- Liveness Supermarq : 0.8333333333333334

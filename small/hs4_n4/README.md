@@ -1,0 +1,17 @@
+# Application: hs4_n4
+- Qubit Count : 4
+- Circuit Depth : 10
+- Circuit Width : 4
+- Retention Lifespan : 2.302585092994046
+- Gate Density : 0.8
+- Dual Gate Count : 4
+- Measurement Density : 0.9222198635284841
+- Size Factor : 3.4657359027997265
+- Gate Count : 28
+- Entanglement Variance : 0.0
+- Communication Supermarq : 0.3333333333333333
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.14285714285714285
+- Parallelism Supermarq : 0.6428571428571428
+- Liveness Supermarq : 0.9

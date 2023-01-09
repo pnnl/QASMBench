@@ -1,0 +1,17 @@
+# Application: grover_n2
+- Qubit Count : 2
+- Circuit Depth : 12
+- Circuit Width : 2
+- Retention Lifespan : 2.4849066497880004
+- Gate Density : 0.75
+- Dual Gate Count : 2
+- Measurement Density : 1.5890269151739729
+- Size Factor : 2.8903717578961645
+- Gate Count : 16
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.125
+- Parallelism Supermarq : 0.25
+- Liveness Supermarq : 0.8333333333333334

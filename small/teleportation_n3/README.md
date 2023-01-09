@@ -1,0 +1,17 @@
+# Application: teleportation_n3
+- Qubit Count : 3
+- Circuit Depth : 7
+- Circuit Width : 3
+- Retention Lifespan : 1.9459101490553132
+- Gate Density : 0.47619047619047616
+- Dual Gate Count : 2
+- Measurement Density : 1.0148408125744743
+- Size Factor : 2.302585092994046
+- Gate Count : 8
+- Entanglement Variance : 0.17027520792199688
+- Communication Supermarq : 0.6666666666666666
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.25
+- Parallelism Supermarq : 0.125
+- Liveness Supermarq : 0.6190476190476191

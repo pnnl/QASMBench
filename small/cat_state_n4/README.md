@@ -1,0 +1,17 @@
+# Application: cat_state_n4
+- Qubit Count : 4
+- Circuit Depth : 5
+- Circuit Width : 4
+- Retention Lifespan : 1.6094379124341003
+- Gate Density : 0.35
+- Dual Gate Count : 3
+- Measurement Density : 0.7489330683884977
+- Size Factor : 1.9459101490553132
+- Gate Count : 4
+- Entanglement Variance : 0.17328679513998632
+- Communication Supermarq : 0.5
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.75
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.55

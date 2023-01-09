@@ -1,0 +1,17 @@
+# Application: ipea_n2
+- Qubit Count : 2
+- Circuit Depth : 41
+- Circuit Width : 2
+- Retention Lifespan : 3.713572066704308
+- Gate Density : 1.6951219512195121
+- Dual Gate Count : 30
+- Measurement Density : 1.1016798118160633
+- Size Factor : 4.9344739331306915
+- Gate Count : 109
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.075
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.4411764705882353
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.6829268292682927

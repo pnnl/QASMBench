@@ -1,0 +1,17 @@
+# Application: qaoa_n6
+- Qubit Count : 6
+- Circuit Depth : 110
+- Circuit Width : 6
+- Retention Lifespan : 4.700480365792417
+- Gate Density : 0.4909090909090909
+- Dual Gate Count : 54
+- Measurement Density : 1.0820399725034118
+- Size Factor : 5.780743515792329
+- Gate Count : 270
+- Entanglement Variance : 0.0
+- Communication Supermarq : 0.6
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.6111111111111112
+- Entanglement Supermarq : 0.2
+- Parallelism Supermarq : 0.5925925925925926
+- Liveness Supermarq : 0.5

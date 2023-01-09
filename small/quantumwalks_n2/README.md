@@ -1,0 +1,17 @@
+# Application: quantumwalks_n2
+- Qubit Count : 2
+- Circuit Depth : 8
+- Circuit Width : 2
+- Retention Lifespan : 2.0794415416798357
+- Gate Density : 0.875
+- Dual Gate Count : 3
+- Measurement Density : 1.3862943611198906
+- Size Factor : 2.6390573296152584
+- Gate Count : 11
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.2727272727272727
+- Parallelism Supermarq : 0.2727272727272727
+- Liveness Supermarq : 1.0

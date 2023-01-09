@@ -1,0 +1,17 @@
+# Application: shor_n5
+- Qubit Count : 5
+- Circuit Depth : 24
+- Circuit Width : 5
+- Retention Lifespan : 3.1780538303479458
+- Gate Density : 1.2666666666666666
+- Dual Gate Count : 30
+- Measurement Density : 1.5958305809273485
+- Size Factor : 5.170483995038151
+- Gate Count : 122
+- Entanglement Variance : 1.1977922833779728
+- Communication Supermarq : 0.4
+- Measurement Supermarq : 0.08695652173913043
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.3
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.30833333333333335

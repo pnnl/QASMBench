@@ -1,0 +1,17 @@
+# Application: simon_n6
+- Qubit Count : 6
+- Circuit Depth : 9
+- Circuit Width : 6
+- Retention Lifespan : 2.1972245773362196
+- Gate Density : 2.740740740740741
+- Dual Gate Count : 14
+- Measurement Density : 0.6648306744273791
+- Size Factor : 5.318119993844216
+- Gate Count : 134
+- Entanglement Variance : 1.0434758915979185
+- Communication Supermarq : 0.13333333333333333
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.125
+- Parallelism Supermarq : 0.4375
+- Liveness Supermarq : 0.5185185185185185

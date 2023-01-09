@@ -1,0 +1,17 @@
+# Application: hhl_n7
+- Qubit Count : 7
+- Circuit Depth : 551
+- Circuit Width : 7
+- Retention Lifespan : 6.311734809152915
+- Gate Density : 0.22945294270158154
+- Dual Gate Count : 196
+- Measurement Density : 1.1796635654583183
+- Size Factor : 6.785587645007929
+- Gate Count : 689
+- Entanglement Variance : 1.3047336144381732
+- Communication Supermarq : 0.5238095238095238
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.9132653061224489
+- Entanglement Supermarq : 0.2844702467343977
+- Parallelism Supermarq : 0.2002902757619739
+- Liveness Supermarq : 0.2258231786362458

@@ -1,0 +1,17 @@
+# Application: inverseqft_n4
+- Qubit Count : 4
+- Circuit Depth : 12
+- Circuit Width : 4
+- Retention Lifespan : 2.4849066497880004
+- Gate Density : 0.2916666666666667
+- Dual Gate Count : 0
+- Measurement Density : 0.9678002527269728
+- Size Factor : 2.6390573296152584
+- Gate Count : 14
+- Entanglement Variance : 0.0
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.1428571428571429
+- Liveness Supermarq : 0.375
