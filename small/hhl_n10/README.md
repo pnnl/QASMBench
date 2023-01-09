@@ -1,4 +1,4 @@
-- Application: hhl_n10
+# Application: hhl_n10
 - Qubit Count : 5
 - Circuit Depth : 78
 - Circuit Width : 5
