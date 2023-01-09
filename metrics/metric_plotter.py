@@ -1,3 +1,14 @@
+# ----------------------------------------------------------------------
+# QASMBench: A Low-level OpenQASM Benchmark Suite
+# ----------------------------------------------------------------------
+# Samuel Stein, Ang Li
+# Pacific Northwest National Laboratory(PNNL), U.S.
+# BSD Lincese.
+# Created 05/01/2023.
+# PNNL IPID: 31924-E, IR: PNNL-SA-153380, PNNL-SA-162867, ECCN:EAR99
+# ----------------------------------------------------------------------
+
+
 from typing import *
 import numpy as np
 import matplotlib.pyplot as plt
