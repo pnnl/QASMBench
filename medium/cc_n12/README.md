@@ -1,0 +1,17 @@
+# Application: cc_n12
+- Qubit Count : 12
+- Circuit Depth : 39
+- Circuit Width : 12
+- Retention Lifespan : 3.6635616461296463
+- Gate Density : 0.12606837606837606
+- Dual Gate Count : 12
+- Measurement Density : 0.5123723579931373
+- Size Factor : 4.07753744390572
+- Gate Count : 47
+- Entanglement Variance : 0.39246085010936116
+- Communication Supermarq : 0.16666666666666666
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.2553191489361702
+- Parallelism Supermarq : 0.17021276595744683
+- Liveness Supermarq : 0.1517094017094017

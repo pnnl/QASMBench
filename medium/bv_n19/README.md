@@ -1,0 +1,17 @@
+# Application: bv_n19
+- Qubit Count : 19
+- Circuit Depth : 22
+- Circuit Width : 19
+- Retention Lifespan : 3.091042453358316
+- Gate Density : 0.17703349282296652
+- Dual Gate Count : 18
+- Measurement Density : 0.3353045240291531
+- Size Factor : 4.30406509320417
+- Gate Count : 56
+- Entanglement Variance : 0.2955792239075848
+- Communication Supermarq : 0.10526315789473684
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.32142857142857145
+- Parallelism Supermarq : 0.6071428571428572
+- Liveness Supermarq : 0.22009569377990432

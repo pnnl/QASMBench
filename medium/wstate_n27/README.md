@@ -1,0 +1,17 @@
+# Application: wstate_n27
+- Qubit Count : 27
+- Circuit Depth : 55
+- Circuit Width : 27
+- Retention Lifespan : 4.007333185232471
+- Gate Density : 0.17575757575757575
+- Dual Gate Count : 52
+- Measurement Density : 0.270487779675437
+- Size Factor : 5.564520407322694
+- Gate Count : 209
+- Entanglement Variance : 0.07885604264729905
+- Communication Supermarq : 0.07407407407407407
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5192307692307693
+- Entanglement Supermarq : 0.49523809523809526
+- Parallelism Supermarq : 0.47619047619047616
+- Liveness Supermarq : 0.12390572390572391

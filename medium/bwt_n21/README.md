@@ -1,0 +1,17 @@
+# Application: bwt_n21
+- Qubit Count : 21
+- Circuit Depth : 53601
+- Circuit Width : 21
+- Retention Lifespan : 10.889323003601277
+- Gate Density : 0.9751070742283593
+- Dual Gate Count : 174800
+- Measurement Density : 0.6635164495868905
+- Size Factor : 14.0396144480056
+- Gate Count : 922801
+- Entanglement Variance : 1.0581639171194908
+- Communication Supermarq : 0.06190476190476191
+- Measurement Supermarq : 0.15666044776119403
+- Depth Supermarq : 0.660377358490566
+- Entanglement Supermarq : 0.20463122942828738
+- Parallelism Supermarq : 0.4826208241233193
+- Liveness Supermarq : 0.16455716444522622

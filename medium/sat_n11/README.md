@@ -1,0 +1,17 @@
+# Application: sat_n11
+- Qubit Count : 11
+- Circuit Depth : 51
+- Circuit Width : 11
+- Retention Lifespan : 3.9318256327243257
+- Gate Density : 8.397504456327987
+- Dual Gate Count : 252
+- Measurement Density : 1.582430226380674
+- Size Factor : 8.850660919017152
+- Gate Count : 4459
+- Entanglement Variance : 1.186855835943771
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.43956043956043955
+- Liveness Supermarq : 0.28698752228163993

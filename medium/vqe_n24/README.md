@@ -1,0 +1,17 @@
+# Application: vqe_n24
+- Qubit Count : 24
+- Circuit Depth : 1099317
+- Circuit Width : 24
+- Retention Lifespan : 13.910199635833811
+- Gate Density : 0.14570835042728045
+- Dual Gate Count : 1538240
+- Measurement Density : 0.7120105610909064
+- Size Factor : 15.162105211231237
+- Gate Count : 2306072
+- Entanglement Variance : 1.032786793016863
+- Communication Supermarq : 0.8442028985507246
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.6933690451425005
+- Entanglement Supermarq : 0.6670390169951328
+- Parallelism Supermarq : 0.5232945892409258
+- Liveness Supermarq : 0.14570926008300306

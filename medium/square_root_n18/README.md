@@ -1,0 +1,17 @@
+# Application: square_root_n18
+- Qubit Count : 18
+- Circuit Depth : 203
+- Circuit Width : 18
+- Retention Lifespan : 5.313205979041787
+- Gate Density : 1.5155993431855501
+- Dual Gate Count : 898
+- Measurement Density : 0.6310444413029194
+- Size Factor : 8.75115798136203
+- Gate Count : 4640
+- Entanglement Variance : 0.6764764303848954
+- Communication Supermarq : 0.06535947712418301
+- Measurement Supermarq : 0.30198019801980197
+- Depth Supermarq : 0.23728813559322035
+- Entanglement Supermarq : 0.24583333333333332
+- Parallelism Supermarq : 0.5770833333333334
+- Liveness Supermarq : 0.2561576354679803
