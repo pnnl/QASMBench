@@ -1,0 +1,17 @@
+# Application: multiplier_n75
+- Qubit Count : 75
+- Circuit Depth : 1308
+- Circuit Width : 75
+- Retention Lifespan : 7.176254532017144
+- Gate Density : 0.44716615698267076
+- Dual Gate Count : 7350
+- Measurement Density : 0.7662495097035636
+- Size Factor : 10.826694313452013
+- Gate Count : 36517
+- Entanglement Variance : 0.199071737444796
+- Communication Supermarq : 0.010810810810810811
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.7574712643678161
+- Entanglement Supermarq : 0.44455799693408277
+- Parallelism Supermarq : 0.33163004598875834
+- Liveness Supermarq : 0.05098878695208971

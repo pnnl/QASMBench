@@ -1,0 +1,17 @@
+# Application: qugan_n39
+- Qubit Count : 39
+- Circuit Depth : 40
+- Circuit Width : 39
+- Retention Lifespan : 3.6888794541139363
+- Gate Density : 0.742948717948718
+- Dual Gate Count : 226
+- Measurement Density : 0.38697058422334646
+- Size Factor : 7.1785454837637
+- Gate Count : 933
+- Entanglement Variance : 0.2535937636837422
+- Communication Supermarq : 0.048582995951417005
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.549618320610687
+- Parallelism Supermarq : 0.6946564885496183
+- Liveness Supermarq : 0.16666666666666666

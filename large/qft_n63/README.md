@@ -1,0 +1,17 @@
+# Application: qft_n63
+- Qubit Count : 63
+- Circuit Depth : 494
+- Circuit Width : 63
+- Retention Lifespan : 6.202535517187923
+- Gate Density : 0.44129554655870445
+- Dual Gate Count : 3906
+- Measurement Density : 0.16421698799332468
+- Size Factor : 9.527629789180622
+- Gate Count : 9828
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.0629800307219662
+- Entanglement Supermarq : 0.3974358974358974
+- Parallelism Supermarq : 0.9497354497354498
+- Liveness Supermarq : 0.4433198380566802

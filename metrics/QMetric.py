@@ -125,6 +125,7 @@ class QMetric:
         QASM preprocessing and analysis is performed from here onwards.
         """
         self.collate_gates()
+        self.decompose_circuit()
         self.preprocess_qasm()
         self.get_gate_count()
         self.get_dual_qubit_gate_count()
@@ -412,6 +413,7 @@ class QMetric:
                     gate_count += self.GATE_TABLE[operation]
                 to_remove.append((start_point,end_point))
                 end_point,start_point=None,None
+                self.USER_DEFINED_GATES[gate_name] = None
                 self.CX_TABLE[gate_name]=cx_count
                 self.GATE_TABLE[gate_name]=gate_count
         valid_indexes = np.ones(len(temporary_qasm))
@@ -419,6 +421,11 @@ class QMetric:
             valid_indexes[start:end+1] = 0
         temporary_qasm = temporary_qasm[valid_indexes.astype('bool')]
         self.qasm = temporary_qasm
+
+    def decompose_circuit(self):
+        gates = list(self.USER_DEFINED_GATES.keys())
+        for _ in range(len(gates)):
+            self.circuit = self.circuit.decompose(gates_to_decompose = gates)
 
     def preprocess_qasm(self):
         """

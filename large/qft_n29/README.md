@@ -1,0 +1,17 @@
+# Application: qft_n29
+- Qubit Count : 29
+- Circuit Depth : 222
+- Circuit Width : 29
+- Retention Lifespan : 5.402677381872279
+- Gate Density : 0.44594594594594594
+- Dual Gate Count : 812
+- Measurement Density : 0.3024128693744398
+- Size Factor : 7.962415680121064
+- Gate Count : 2059
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.1354679802955665
+- Entanglement Supermarq : 0.39436619718309857
+- Parallelism Supermarq : 0.8921806702282662
+- Liveness Supermarq : 0.45045045045045046

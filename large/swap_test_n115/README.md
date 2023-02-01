@@ -1,0 +1,17 @@
+# Application: swap_test_n115
+- Qubit Count : 115
+- Circuit Depth : 60
+- Circuit Width : 115
+- Retention Lifespan : 4.0943445622221
+- Gate Density : 0.3720289855072464
+- Dual Gate Count : 456
+- Measurement Density : 8.83927669058535
+- Size Factor : 8.014004994779459
+- Gate Count : 2111
+- Entanglement Variance : 0.1061730845956081
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.653179190751445
+- Liveness Supermarq : 0.04173913043478261

@@ -1,0 +1,17 @@
+# Application: qec_sm_n5
+- Qubit Count : 5
+- Circuit Depth : 10
+- Circuit Width : 5
+- Retention Lifespan : 2.302585092994046
+- Gate Density : 0.14
+- Dual Gate Count : 2
+- Measurement Density : 1.956011502714073
+- Size Factor : 2.5649493574615367
+- Gate Count : 5
+- Entanglement Variance : 0.4208268308540415
+- Communication Supermarq : 0.4
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.5
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.3

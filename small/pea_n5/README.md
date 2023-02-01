@@ -1,0 +1,17 @@
+# Application: pea_n5
+- Qubit Count : 5
+- Circuit Depth : 68
+- Circuit Width : 5
+- Retention Lifespan : 4.219507705176107
+- Gate Density : 0.5529411764705883
+- Dual Gate Count : 42
+- Measurement Density : 1.4572364044025519
+- Size Factor : 5.236441962829949
+- Gate Count : 146
+- Entanglement Variance : 1.1621084022455468
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.9166666666666666
+- Entanglement Supermarq : 0.4864864864864865
+- Parallelism Supermarq : 0.08108108108108103
+- Liveness Supermarq : 0.3352941176470588

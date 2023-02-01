@@ -1,0 +1,17 @@
+# Application: adder_n433
+- Qubit Count : 433
+- Circuit Depth : 447
+- Circuit Width : 433
+- Retention Lifespan : 6.102558594613569
+- Gate Density : 0.08680399481273669
+- Dual Gate Count : 3120
+- Measurement Density : 0.028113848320129465
+- Size Factor : 9.857705359881
+- Gate Count : 13681
+- Entanglement Variance : 0.02419355491471411
+- Communication Supermarq : 0.006671798819604825
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.30514705882352944
+- Entanglement Supermarq : 0.5857860732232592
+- Parallelism Supermarq : 0.6791098348887293
+- Liveness Supermarq : 0.017618095489044232

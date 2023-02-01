@@ -1,0 +1,17 @@
+# Application: qugan_n71
+- Qubit Count : 71
+- Circuit Depth : 72
+- Circuit Width : 71
+- Retention Lifespan : 4.276666119016055
+- Gate Density : 0.41764475743348983
+- Dual Gate Count : 418
+- Measurement Density : 0.24398131417306773
+- Size Factor : 7.789454566086673
+- Gate Count : 1717
+- Entanglement Variance : 0.1575199379883954
+- Communication Supermarq : 0.027364185110663984
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.5596707818930041
+- Parallelism Supermarq : 0.7037037037037037
+- Liveness Supermarq : 0.09467918622848201

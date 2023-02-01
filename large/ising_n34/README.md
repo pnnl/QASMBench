@@ -1,0 +1,17 @@
+# Application: ising_n34
+- Qubit Count : 34
+- Circuit Depth : 16
+- Circuit Width : 34
+- Retention Lifespan : 2.772588722239781
+- Gate Density : 0.7977941176470589
+- Dual Gate Count : 66
+- Measurement Density : 0.18526321314282182
+- Size Factor : 6.073044534100405
+- Gate Count : 368
+- Entanglement Variance : 0.06304471759895174
+- Communication Supermarq : 0.058823529411764705
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.06060606060606061
+- Entanglement Supermarq : 0.1793478260869565
+- Parallelism Supermarq : 0.9565217391304348
+- Liveness Supermarq : 0.8602941176470589

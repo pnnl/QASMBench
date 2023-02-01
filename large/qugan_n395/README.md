@@ -1,0 +1,17 @@
+# Application: qugan_n395
+- Qubit Count : 395
+- Circuit Depth : 396
+- Circuit Width : 395
+- Retention Lifespan : 5.981414211254481
+- Gate Density : 0.07682521416698632
+- Dual Gate Count : 2362
+- Measurement Density : 0.0607121826200792
+- Size Factor : 9.517310233335248
+- Gate Count : 9655
+- Entanglement Variance : 0.03724066511690755
+- Communication Supermarq : 0.005037589153762128
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.5693536673928831
+- Parallelism Supermarq : 0.7124183006535948
+- Liveness Supermarq : 0.017593658099987215

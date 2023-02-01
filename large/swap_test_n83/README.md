@@ -1,0 +1,17 @@
+# Application: swap_test_n83
+- Qubit Count : 83
+- Circuit Depth : 44
+- Circuit Width : 83
+- Retention Lifespan : 3.784189633918261
+- Gate Density : 0.505750273822563
+- Dual Gate Count : 328
+- Measurement Density : 8.20303024171486
+- Size Factor : 7.684783943522785
+- Gate Count : 1519
+- Entanglement Variance : 0.1390031506630541
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.648
+- Liveness Supermarq : 0.056955093099671415

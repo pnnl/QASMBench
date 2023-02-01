@@ -1,0 +1,17 @@
+# Application: ghz_n127
+- Qubit Count : 127
+- Circuit Depth : 128
+- Circuit Width : 127
+- Retention Lifespan : 4.852030263919617
+- Gate Density : 0.015563484251968504
+- Dual Gate Count : 126
+- Measurement Density : 0.07634816811321424
+- Size Factor : 5.53338948872752
+- Gate Count : 127
+- Entanglement Variance : 0.00856738662196395
+- Communication Supermarq : 0.015748031496062992
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.9921259842519685
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.023375984251968504

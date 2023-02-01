@@ -1,0 +1,17 @@
+# Application: cat_n130
+- Qubit Count : 130
+- Circuit Depth : 131
+- Circuit Width : 130
+- Retention Lifespan : 4.875197323201151
+- Gate Density : 0.015208455666470933
+- Dual Gate Count : 129
+- Measurement Density : 0.07494409056659027
+- Size Factor : 5.556828061699537
+- Gate Count : 130
+- Entanglement Variance : 0.008371560915455755
+- Communication Supermarq : 0.015384615384615385
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.9923076923076923
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.022842043452730474

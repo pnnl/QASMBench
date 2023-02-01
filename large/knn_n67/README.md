@@ -1,0 +1,17 @@
+# Application: knn_n67
+- Qubit Count : 67
+- Circuit Depth : 36
+- Circuit Width : 67
+- Retention Lifespan : 3.58351893845611
+- Gate Density : 0.6165008291873963
+- Dual Gate Count : 264
+- Measurement Density : 7.788211557847076
+- Size Factor : 7.467942332285852
+- Gate Count : 1223
+- Entanglement Variance : 0.16554204620983615
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.6435643564356436
+- Liveness Supermarq : 0.06965174129353234

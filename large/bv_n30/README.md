@@ -1,0 +1,17 @@
+# Application: bv_n30
+- Qubit Count : 30
+- Circuit Depth : 22
+- Circuit Width : 30
+- Retention Lifespan : 3.091042453358316
+- Gate Density : 0.14545454545454545
+- Dual Gate Count : 18
+- Measurement Density : 0.22387033913863694
+- Size Factor : 4.564348191467836
+- Gate Count : 78
+- Entanglement Variance : 0.19010385285561657
+- Communication Supermarq : 0.041379310344827586
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.23076923076923078
+- Parallelism Supermarq : 0.717948717948718
+- Liveness Supermarq : 0.1893939393939394

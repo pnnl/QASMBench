@@ -1,0 +1,17 @@
+# Application: cc_n32
+- Qubit Count : 32
+- Circuit Depth : 99
+- Circuit Width : 32
+- Retention Lifespan : 4.59511985013459
+- Gate Density : 0.050189393939393936
+- Dual Gate Count : 32
+- Measurement Density : 0.25190174227919737
+- Size Factor : 5.0689042022202315
+- Gate Count : 127
+- Entanglement Variance : 0.21363310241490835
+- Communication Supermarq : 0.0625
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.25196850393700787
+- Parallelism Supermarq : 0.22047244094488194
+- Liveness Supermarq : 0.06029040404040404

@@ -1,0 +1,17 @@
+# Application: cat_n260
+- Qubit Count : 260
+- Circuit Depth : 261
+- Circuit Width : 260
+- Retention Lifespan : 5.564520407322694
+- Gate Density : 0.007648099027409372
+- Dual Gate Count : 259
+- Measurement Density : 0.04278923860899316
+- Size Factor : 6.251903883165888
+- Gate Count : 260
+- Entanglement Variance : 0.004205657266029581
+- Communication Supermarq : 0.007692307692307693
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.9961538461538462
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.011479516651930446

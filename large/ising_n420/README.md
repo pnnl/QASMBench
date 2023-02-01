@@ -1,0 +1,17 @@
+# Application: ising_n420
+- Qubit Count : 420
+- Circuit Depth : 16
+- Circuit Width : 420
+- Retention Lifespan : 2.772588722239781
+- Gate Density : 0.8113095238095238
+- Dual Gate Count : 838
+- Measurement Density : 0.02098296055599332
+- Size Factor : 8.603737792816423
+- Gate Count : 4614
+- Entanglement Variance : 0.005221387593875855
+- Communication Supermarq : 0.004761904761904762
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.00477326968973747
+- Entanglement Supermarq : 0.18162115301257042
+- Parallelism Supermarq : 0.9965322930212397
+- Liveness Supermarq : 0.8738095238095238

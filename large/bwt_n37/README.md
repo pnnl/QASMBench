@@ -1,0 +1,17 @@
+# Application: bwt_n37
+- Qubit Count : 37
+- Circuit Depth : 187601
+- Circuit Width : 37
+- Retention Lifespan : 12.14207264603046
+- Gate Density : 0.5776493440578386
+- Dual Gate Count : 632400
+- Measurement Density : 0.42575650158580225
+- Size Factor : 15.338431734689937
+- Gate Count : 3377201
+- Entanglement Variance : 0.6715164056454196
+- Communication Supermarq : 0.03753753753753754
+- Measurement Supermarq : 0.14281982942430704
+- Depth Supermarq : 0.6879432624113475
+- Entanglement Supermarq : 0.1847962490293282
+- Parallelism Supermarq : 0.385319838401578
+- Liveness Supermarq : 0.08385436198187729

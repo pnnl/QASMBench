@@ -1,0 +1,17 @@
+# Application: ghz_n78
+- Qubit Count : 78
+- Circuit Depth : 79
+- Circuit Width : 78
+- Retention Lifespan : 4.3694478524670215
+- Gate Density : 0.02515417072379098
+- Dual Gate Count : 77
+- Measurement Density : 0.11187380357893094
+- Size Factor : 5.043425116919247
+- Gate Count : 78
+- Entanglement Variance : 0.013863724131200064
+- Communication Supermarq : 0.02564102564102564
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.9871794871794872
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.037812398571892246

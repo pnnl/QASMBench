@@ -1,0 +1,17 @@
+# Application: bigadder_n18
+- Qubit Count : 18
+- Circuit Depth : 37
+- Circuit Width : 18
+- Retention Lifespan : 3.6109179126442243
+- Gate Density : 2.5645645645645647
+- Dual Gate Count : 130
+- Measurement Density : 0.7223655189489322
+- Size Factor : 7.91862865334224
+- Gate Count : 1578
+- Entanglement Variance : 0.6178543363789472
+- Communication Supermarq : 0.1111111111111111
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.6764705882352942
+- Entanglement Supermarq : 0.5666666666666667
+- Parallelism Supermarq : 0.3833333333333333
+- Liveness Supermarq : 0.15615615615615616

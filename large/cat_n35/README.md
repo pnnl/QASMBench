@@ -1,0 +1,17 @@
+# Application: cat_n35
+- Qubit Count : 35
+- Circuit Depth : 36
+- Circuit Width : 35
+- Retention Lifespan : 3.58351893845611
+- Gate Density : 0.05476190476190476
+- Dual Gate Count : 34
+- Measurement Density : 0.2039676285698721
+- Size Factor : 4.23410650459726
+- Gate Count : 35
+- Entanglement Variance : 0.030279213010052746
+- Communication Supermarq : 0.05714285714285714
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.9714285714285714
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.08253968253968254

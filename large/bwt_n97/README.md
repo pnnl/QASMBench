@@ -1,0 +1,17 @@
+# Application: bwt_n97
+- Qubit Count : 97
+- Circuit Depth : 695601
+- Circuit Width : 97
+- Retention Lifespan : 13.452531499069051
+- Gate Density : 0.22172921237271095
+- Dual Gate Count : 2353200
+- Measurement Density : 0.18584786059353026
+- Size Factor : 16.656085036387264
+- Gate Count : 12607601
+- Entanglement Variance : 0.27930537674996253
+- Communication Supermarq : 0.015034364261168385
+- Measurement Supermarq : 0.14200402530189765
+- Depth Supermarq : 0.7197452229299363
+- Entanglement Supermarq : 0.17740096289928164
+- Parallelism Supermarq : 0.3450090913285392
+- Liveness Supermarq : 0.030716492185049148

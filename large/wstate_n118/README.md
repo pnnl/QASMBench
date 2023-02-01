@@ -1,0 +1,17 @@
+# Application: wstate_n118
+- Qubit Count : 118
+- Circuit Depth : 237
+- Circuit Width : 118
+- Retention Lifespan : 5.4680601411351315
+- Gate Density : 0.04187227347493385
+- Dual Gate Count : 234
+- Measurement Density : 0.08676902343729488
+- Size Factor : 7.065613363597717
+- Gate Count : 937
+- Entanglement Variance : 0.018491898475925455
+- Communication Supermarq : 0.01694915254237288
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5042735042735043
+- Entanglement Supermarq : 0.4989339019189765
+- Parallelism Supermarq : 0.49466950959488276
+- Liveness Supermarq : 0.02935707644997497

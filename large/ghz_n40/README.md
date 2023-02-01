@@ -1,0 +1,17 @@
+# Application: ghz_n40
+- Qubit Count : 40
+- Circuit Depth : 41
+- Circuit Width : 40
+- Retention Lifespan : 3.713572066704308
+- Gate Density : 0.048170731707317074
+- Dual Gate Count : 39
+- Measurement Density : 0.1850612880204561
+- Size Factor : 4.3694478524670215
+- Gate Count : 40
+- Entanglement Variance : 0.026617768424810728
+- Communication Supermarq : 0.05
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.975
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.07256097560975609

@@ -1,0 +1,17 @@
+# Application: ising_n98
+- Qubit Count : 98
+- Circuit Depth : 16
+- Circuit Width : 98
+- Retention Lifespan : 2.772588722239781
+- Gate Density : 0.8073979591836735
+- Dual Gate Count : 194
+- Measurement Density : 0.07507710409092197
+- Size Factor : 7.143617602704121
+- Gate Count : 1072
+- Entanglement Variance : 0.02223385132542718
+- Communication Supermarq : 0.02040816326530612
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.020618556701030927
+- Entanglement Supermarq : 0.18097014925373134
+- Parallelism Supermarq : 0.9850746268656716
+- Liveness Supermarq : 0.8698979591836735

@@ -1,0 +1,17 @@
+# Application: wstate_n76
+- Qubit Count : 76
+- Circuit Depth : 153
+- Circuit Width : 76
+- Retention Lifespan : 5.030437921392435
+- Gate Density : 0.06458548331613347
+- Dual Gate Count : 150
+- Measurement Density : 0.12317330607472061
+- Size Factor : 6.621405651764134
+- Gate Count : 601
+- Entanglement Variance : 0.028599405700662054
+- Communication Supermarq : 0.02631578947368421
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5066666666666667
+- Entanglement Supermarq : 0.4983388704318937
+- Parallelism Supermarq : 0.49169435215946844
+- Liveness Supermarq : 0.04532163742690058

@@ -1,0 +1,17 @@
+# Application: knn_129
+- Qubit Count : 129
+- Circuit Depth : 67
+- Circuit Width : 129
+- Retention Lifespan : 4.204692619390966
+- Gate Density : 0.3334490339002661
+- Dual Gate Count : 512
+- Measurement Density : 9.064505023752638
+- Size Factor : 8.129764445794171
+- Gate Count : 2370
+- Entanglement Variance : 0.0964760037794631
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.654639175257732
+- Liveness Supermarq : 0.03737128311928729

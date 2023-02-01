@@ -1,0 +1,17 @@
+# Application: bwt_n177
+- Qubit Count : 177
+- Circuit Depth : 1367601
+- Circuit Width : 177
+- Retention Lifespan : 14.128568667954971
+- Gate Density : 0.12195383481050245
+- Dual Gate Count : 4641200
+- Measurement Density : 0.1090662056527051
+- Size Factor : 17.335900381602947
+- Gate Count : 24879601
+- Entanglement Variance : 0.16049819093341064
+- Communication Supermarq : 0.008346173600410888
+- Measurement Supermarq : 0.1424085990055572
+- Depth Supermarq : 0.7233809001097695
+- Entanglement Supermarq : 0.17603856230021145
+- Parallelism Supermarq : 0.33932350757318475
+- Liveness Supermarq : 0.01675854287909997

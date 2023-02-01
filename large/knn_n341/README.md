@@ -1,0 +1,17 @@
+# Application: knn_341
+- Qubit Count : 341
+- Circuit Depth : 173
+- Circuit Width : 341
+- Retention Lifespan : 5.153291594497779
+- Gate Density : 0.12971030461241165
+- Dual Gate Count : 1360
+- Measurement Density : 10.985174071781296
+- Size Factor : 9.106312301552135
+- Gate Count : 6292
+- Entanglement Variance : 0.042283624243641245
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.662109375
+- Liveness Supermarq : 0.014459342633871814

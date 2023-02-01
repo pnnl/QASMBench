@@ -1,0 +1,17 @@
+# Application: adder_n28
+- Qubit Count : 28
+- Circuit Depth : 42
+- Circuit Width : 28
+- Retention Lifespan : 3.7376696182833684
+- Gate Density : 0.8937074829931972
+- Dual Gate Count : 195
+- Measurement Density : 0.2524955045878062
+- Size Factor : 7.085901464365611
+- Gate Count : 856
+- Entanglement Variance : 0.2796499455053923
+- Communication Supermarq : 0.10317460317460317
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.47058823529411764
+- Entanglement Supermarq : 0.5795454545454546
+- Parallelism Supermarq : 0.5227272727272727
+- Liveness Supermarq : 0.1828231292517007

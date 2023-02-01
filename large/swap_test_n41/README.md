@@ -1,0 +1,17 @@
+# Application: swap_test_n41
+- Qubit Count : 41
+- Circuit Depth : 23
+- Circuit Width : 41
+- Retention Lifespan : 3.1354942159291497
+- Gate Density : 0.9565217391304348
+- Dual Gate Count : 160
+- Measurement Density : 6.849066282633458
+- Size Factor : 6.967909201801884
+- Gate Count : 742
+- Entanglement Variance : 0.24513257807915922
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.6290322580645161
+- Liveness Supermarq : 0.10922587486744433

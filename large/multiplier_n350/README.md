@@ -1,0 +1,17 @@
+# Application: multiplier_n350
+- Qubit Count : 350
+- Circuit Depth : 29193
+- Circuit Width : 350
+- Retention Lifespan : 10.281684233490099
+- Gate Density : 0.09652646671658079
+- Dual Gate Count : 165200
+- Measurement Density : 0.23056596268533655
+- Size Factor : 13.939500071307927
+- Gate Count : 821064
+- Entanglement Variance : 0.05600324141106875
+- Communication Supermarq : 0.002292263610315186
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.7517471736896197
+- Entanglement Supermarq : 0.4444545952859492
+- Parallelism Supermarq : 0.33324958889091905
+- Liveness Supermarq : 0.010951157567127149

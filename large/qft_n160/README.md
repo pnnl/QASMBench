@@ -1,0 +1,17 @@
+# Application: qft_n160
+- Qubit Count : 160
+- Circuit Depth : 1270
+- Circuit Width : 160
+- Retention Lifespan : 7.146772179452637
+- Gate Density : 0.4389763779527559
+- Dual Gate Count : 25440
+- Measurement Density : 0.0763871624667904
+- Size Factor : 11.398636318568101
+- Gate Count : 63760
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.024921383647798744
+- Entanglement Supermarq : 0.3989962358845671
+- Parallelism Supermarq : 0.980081555834379
+- Liveness Supermarq : 0.4397637795275591

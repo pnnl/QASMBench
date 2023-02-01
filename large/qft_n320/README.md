@@ -1,0 +1,17 @@
+# Application: qft_n320
+- Qubit Count : 320
+- Circuit Depth : 2550
+- Circuit Width : 320
+- Retention Lifespan : 7.843848638152472
+- Gate Density : 0.43823529411764706
+- Dual Gate Count : 102080
+- Measurement Density : 0.042538030106082016
+- Size Factor : 12.787170322281495
+- Gate Count : 255520
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.012480407523510971
+- Entanglement Supermarq : 0.3994990607388854
+- Parallelism Supermarq : 0.9900203506574827
+- Liveness Supermarq : 0.43862745098039213
