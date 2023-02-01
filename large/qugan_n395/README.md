@@ -8,7 +8,7 @@
 - Measurement Density : 0.0607121826200792
 - Size Factor : 9.517310233335248
 - Gate Count : 9655
-- Entanglement Variance : 0.03724066511690755
+- Entanglement Variance : 0.03724066511690756
 - Communication Supermarq : 0.005037589153762128
 - Measurement Supermarq : 0.0
 - Depth Supermarq : 0.5

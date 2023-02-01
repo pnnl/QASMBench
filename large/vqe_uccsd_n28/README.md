@@ -2,11 +2,11 @@
 - Qubit Count : 28
 - Circuit Depth : 309290
 - Circuit Width : 28
-- Retention Lifespan : 12.642034627080342
+- Retention Lifespan : 12.642034627080344
 - Gate Density : 0.08038341270097873
 - Dual Gate Count : 296648
 - Measurement Density : inf
-- Size Factor : 13.45329170348424
+- Size Factor : 13.453291703484238
 - Gate Count : 399482
 - Entanglement Variance : 0.7802332393721747
 - Communication Supermarq : 0.2566137566137566

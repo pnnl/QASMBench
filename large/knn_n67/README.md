@@ -5,7 +5,7 @@
 - Retention Lifespan : 3.58351893845611
 - Gate Density : 0.6165008291873963
 - Dual Gate Count : 264
-- Measurement Density : 7.788211557847076
+- Measurement Density : 7.7882115578470765
 - Size Factor : 7.467942332285852
 - Gate Count : 1223
 - Entanglement Variance : 0.16554204620983615

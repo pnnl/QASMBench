@@ -6,9 +6,9 @@
 - Gate Density : 0.08447691481277678
 - Dual Gate Count : 216000
 - Measurement Density : 0.20676357857415378
-- Size Factor : 14.207631696669745
+- Size Factor : 14.207631696669743
 - Gate Count : 1073557
-- Entanglement Variance : 0.050008291476282836
+- Entanglement Variance : 0.05000829147628282
 - Communication Supermarq : 0.0020050125313283208
 - Measurement Supermarq : 0.0
 - Depth Supermarq : 0.7515330188679246

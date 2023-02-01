@@ -2,7 +2,7 @@
 - Qubit Count : 301
 - Circuit Depth : 906
 - Circuit Width : 301
-- Retention Lifespan : 6.80903930604298
+- Retention Lifespan : 6.809039306042979
 - Gate Density : 0.005515096844220516
 - Dual Gate Count : 301
 - Measurement Density : 0.04158189226176696

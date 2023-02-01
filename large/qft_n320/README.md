@@ -2,7 +2,7 @@
 - Qubit Count : 320
 - Circuit Depth : 2550
 - Circuit Width : 320
-- Retention Lifespan : 7.843848638152472
+- Retention Lifespan : 7.843848638152473
 - Gate Density : 0.43823529411764706
 - Dual Gate Count : 102080
 - Measurement Density : 0.042538030106082016
