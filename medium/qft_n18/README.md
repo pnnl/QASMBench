@@ -1,0 +1,17 @@
+# Application: qft_n18
+- Qubit Count : 18
+- Circuit Depth : 134
+- Circuit Width : 18
+- Retention Lifespan : 4.897839799950911
+- Gate Density : 0.45149253731343286
+- Dual Gate Count : 306
+- Measurement Density : 0.4326784198803931
+- Size Factor : 6.9930151229329605
+- Gate Count : 783
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.21568627450980393
+- Entanglement Supermarq : 0.39080459770114945
+- Parallelism Supermarq : 0.8288633461047255
+- Liveness Supermarq : 0.458955223880597

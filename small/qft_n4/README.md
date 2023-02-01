@@ -1,0 +1,17 @@
+# Application: qft_n4
+- Qubit Count : 4
+- Circuit Depth : 9
+- Circuit Width : 4
+- Retention Lifespan : 2.1972245773362196
+- Gate Density : 1.8333333333333333
+- Dual Gate Count : 12
+- Measurement Density : 3.58351893845611
+- Size Factor : 4.189654742026425
+- Gate Count : 54
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.8333333333333334
+- Entanglement Supermarq : 0.5
+- Parallelism Supermarq : 0.25
+- Liveness Supermarq : 0.6111111111111112

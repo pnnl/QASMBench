@@ -1,0 +1,17 @@
+# Application: lpn_n5
+- Qubit Count : 5
+- Circuit Depth : 5
+- Circuit Width : 5
+- Retention Lifespan : 1.6094379124341003
+- Gate Density : 0.52
+- Dual Gate Count : 2
+- Measurement Density : 0.6437751649736401
+- Size Factor : 2.9444389791664403
+- Gate Count : 11
+- Entanglement Variance : 0.4208268308540415
+- Communication Supermarq : 0.2
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.18181818181818182
+- Parallelism Supermarq : 0.5454545454545454
+- Liveness Supermarq : 0.72

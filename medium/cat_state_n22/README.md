@@ -1,0 +1,17 @@
+# Application: cat_state_n22
+- Qubit Count : 22
+- Circuit Depth : 23
+- Circuit Width : 22
+- Retention Lifespan : 3.1354942159291497
+- Gate Density : 0.08498023715415019
+- Dual Gate Count : 21
+- Measurement Density : 0.28302439405852114
+- Size Factor : 3.7612001156935624
+- Gate Count : 22
+- Entanglement Variance : 0.04709508780394434
+- Communication Supermarq : 0.09090909090909091
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.9545454545454546
+- Parallelism Supermarq : 0
+- Liveness Supermarq : 0.12845849802371542

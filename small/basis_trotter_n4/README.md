@@ -1,0 +1,17 @@
+# Application: basis_trotter_n4
+- Qubit Count : 4
+- Circuit Depth : 815
+- Circuit Width : 4
+- Retention Lifespan : 6.703188113240863
+- Gate Density : 0.6773006134969325
+- Dual Gate Count : 582
+- Measurement Density : 2.0223706185901884
+- Size Factor : 7.699842407396986
+- Gate Count : 1626
+- Entanglement Variance : 2.7276651233468536
+- Communication Supermarq : 0.5
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.70995670995671
+- Entanglement Supermarq : 0.30677290836653387
+- Parallelism Supermarq : 0.45883134130146086
+- Liveness Supermarq : 0.6049079754601226

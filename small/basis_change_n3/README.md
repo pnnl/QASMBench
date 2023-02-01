@@ -1,0 +1,17 @@
+# Application: basis_change_n3
+- Qubit Count : 3
+- Circuit Depth : 22
+- Circuit Width : 3
+- Retention Lifespan : 3.091042453358316
+- Gate Density : 1.2575757575757576
+- Dual Gate Count : 10
+- Measurement Density : 1.3965515806754751
+- Size Factor : 4.418840607796598
+- Gate Count : 73
+- Entanglement Variance : 0.9929750517458699
+- Communication Supermarq : 0.6666666666666666
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.30303030303030304
+- Parallelism Supermarq : 0.33333333333333337
+- Liveness Supermarq : 0.696969696969697

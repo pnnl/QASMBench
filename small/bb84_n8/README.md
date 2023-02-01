@@ -1,0 +1,17 @@
+# Application: bb84_n8
+- Qubit Count : 8
+- Circuit Depth : 7
+- Circuit Width : 8
+- Retention Lifespan : 1.9459101490553132
+- Gate Density : 0.48214285714285715
+- Dual Gate Count : 0
+- Measurement Density : 0.25158448067094685
+- Size Factor : 3.295836866004329
+- Gate Count : 27
+- Entanglement Variance : 0.0
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.7407407407407407
+- Liveness Supermarq : 0.7678571428571429

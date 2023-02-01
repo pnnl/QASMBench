@@ -1,0 +1,17 @@
+# Application: adder_n4
+- Qubit Count : 4
+- Circuit Depth : 12
+- Circuit Width : 4
+- Retention Lifespan : 2.4849066497880004
+- Gate Density : 0.6875
+- Dual Gate Count : 10
+- Measurement Density : 0.9678002527269728
+- Size Factor : 3.4965075614664802
+- Gate Count : 23
+- Entanglement Variance : 0.27465307216702745
+- Communication Supermarq : 0.6666666666666666
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.6
+- Entanglement Supermarq : 0.43478260869565216
+- Parallelism Supermarq : 0.4782608695652174
+- Liveness Supermarq : 0.7708333333333334

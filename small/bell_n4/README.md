@@ -1,0 +1,17 @@
+# Application: bell_n4
+- Qubit Count : 4
+- Circuit Depth : 14
+- Circuit Width : 4
+- Retention Lifespan : 2.6390573296152584
+- Gate Density : 0.7142857142857143
+- Dual Gate Count : 7
+- Measurement Density : 1.0063379226837874
+- Size Factor : 3.6888794541139363
+- Gate Count : 33
+- Entanglement Variance : 0.17328679513998632
+- Communication Supermarq : 0.5
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5714285714285714
+- Entanglement Supermarq : 0.21212121212121213
+- Parallelism Supermarq : 0.5757575757575757
+- Liveness Supermarq : 0.7857142857142857

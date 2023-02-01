@@ -1,0 +1,17 @@
+# Application: variational_n4
+- Qubit Count : 4
+- Circuit Depth : 34
+- Circuit Width : 4
+- Retention Lifespan : 3.5263605246161616
+- Gate Density : 0.5147058823529411
+- Dual Gate Count : 16
+- Measurement Density : 1.228163721434013
+- Size Factor : 4.248495242049359
+- Gate Count : 54
+- Entanglement Variance : 1.0435968174739092
+- Communication Supermarq : 0.5
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.75
+- Entanglement Supermarq : 0.2962962962962963
+- Parallelism Supermarq : 0.37037037037037035
+- Liveness Supermarq : 0.5441176470588235

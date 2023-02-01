@@ -1,0 +1,17 @@
+# Application: vqe_n4
+- Qubit Count : 4
+- Circuit Depth : 28
+- Circuit Width : 4
+- Retention Lifespan : 3.332204510175204
+- Gate Density : 0.875
+- Dual Gate Count : 9
+- Measurement Density : 1.1796247178237735
+- Size Factor : 4.584967478670572
+- Gate Count : 89
+- Entanglement Variance : 0.5756462732485115
+- Communication Supermarq : 0.5
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.7777777777777778
+- Entanglement Supermarq : 0.10112359550561797
+- Parallelism Supermarq : 0.6853932584269663
+- Liveness Supermarq : 0.9107142857142857

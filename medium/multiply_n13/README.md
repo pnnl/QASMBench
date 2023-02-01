@@ -1,0 +1,17 @@
+# Application: multiply_n13
+- Qubit Count : 13
+- Circuit Depth : 7
+- Circuit Width : 13
+- Retention Lifespan : 1.9459101490553132
+- Gate Density : 5.736263736263736
+- Dual Gate Count : 26
+- Measurement Density : 1.1277148766292124
+- Size Factor : 6.694562058521095
+- Gate Count : 496
+- Entanglement Variance : 0.6728610141174565
+- Communication Supermarq : 0.05128205128205128
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.2857142857142857
+- Parallelism Supermarq : 0.5
+- Liveness Supermarq : 0.37362637362637363

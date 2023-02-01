@@ -1,0 +1,17 @@
+# Application: qf21_n15
+- Qubit Count : 15
+- Circuit Depth : 52
+- Circuit Width : 15
+- Retention Lifespan : 3.9512437185814275
+- Gate Density : 3.651282051282051
+- Dual Gate Count : 115
+- Measurement Density : 2.219764639894546
+- Size Factor : 8.376320632534823
+- Gate Count : 2733
+- Entanglement Variance : 0.7941146321239445
+- Communication Supermarq : 0.4380952380952381
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.6301369863013698
+- Parallelism Supermarq : 0.28767123287671237
+- Liveness Supermarq : 0.16666666666666666

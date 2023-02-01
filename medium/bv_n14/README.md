@@ -1,0 +1,17 @@
+# Application: bv_n14
+- Qubit Count : 14
+- Circuit Depth : 17
+- Circuit Width : 14
+- Retention Lifespan : 2.833213344056216
+- Gate Density : 0.226890756302521
+- Dual Gate Count : 13
+- Measurement Density : 0.42094389797472886
+- Size Factor : 3.9889840465642745
+- Gate Count : 41
+- Entanglement Variance : 0.3502254381127246
+- Communication Supermarq : 0.14285714285714285
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.3170731707317073
+- Parallelism Supermarq : 0.5853658536585367
+- Liveness Supermarq : 0.2815126050420168

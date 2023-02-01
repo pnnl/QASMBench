@@ -1,0 +1,17 @@
+# Application: dnn_n16
+- Qubit Count : 16
+- Circuit Depth : 173
+- Circuit Width : 16
+- Retention Lifespan : 5.153291594497779
+- Gate Density : 0.8670520231213873
+- Dual Gate Count : 384
+- Measurement Density : 0.4953675197960975
+- Size Factor : 7.783224016336037
+- Gate Count : 2016
+- Entanglement Variance : 0.0
+- Communication Supermarq : 0.13333333333333333
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.125
+- Entanglement Supermarq : 0.19047619047619047
+- Parallelism Supermarq : 0.9141865079365079
+- Liveness Supermarq : 0.8728323699421965

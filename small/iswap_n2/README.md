@@ -1,0 +1,17 @@
+# Application: iswap_n2
+- Qubit Count : 2
+- Circuit Depth : 8
+- Circuit Width : 2
+- Retention Lifespan : 2.0794415416798357
+- Gate Density : 0.6875
+- Dual Gate Count : 2
+- Measurement Density : 1.3862943611198906
+- Size Factor : 2.3978952727983707
+- Gate Count : 9
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.2222222222222222
+- Parallelism Supermarq : 0.11111111111111116
+- Liveness Supermarq : 0.8125

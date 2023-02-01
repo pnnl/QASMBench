@@ -1,0 +1,17 @@
+# Application: seca_n11
+- Qubit Count : 11
+- Circuit Depth : 37
+- Circuit Width : 11
+- Retention Lifespan : 3.6109179126442243
+- Gate Density : 3.339066339066339
+- Dual Gate Count : 84
+- Measurement Density : 2.0029377284808647
+- Size Factor : 7.656810091480378
+- Gate Count : 1275
+- Entanglement Variance : 0.9871097023415605
+- Communication Supermarq : 0.2727272727272727
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.5
+- Entanglement Supermarq : 0.5142857142857142
+- Parallelism Supermarq : 0.4714285714285714
+- Liveness Supermarq : 0.3071253071253071

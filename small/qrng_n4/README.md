@@ -1,0 +1,17 @@
+# Application: qrng_n4
+- Qubit Count : 4
+- Circuit Depth : 2
+- Circuit Width : 4
+- Retention Lifespan : 0.6931471805599453
+- Gate Density : 0.5
+- Dual Gate Count : 0
+- Measurement Density : 0.5198603854199589
+- Size Factor : 1.3862943611198906
+- Gate Count : 4
+- Entanglement Variance : 0.0
+- Communication Supermarq : 0.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0
+- Entanglement Supermarq : 0.0
+- Parallelism Supermarq : 0.5
+- Liveness Supermarq : 1.0

@@ -1,0 +1,17 @@
+# Application: qec9xz_n17
+- Qubit Count : 17
+- Circuit Depth : 16
+- Circuit Width : 17
+- Retention Lifespan : 2.772588722239781
+- Gate Density : 0.3125
+- Dual Gate Count : 32
+- Measurement Density : 0.7007252582869997
+- Size Factor : 4.442651256490317
+- Gate Count : 53
+- Entanglement Variance : 0.22267797879182374
+- Communication Supermarq : 0.17647058823529413
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.375
+- Entanglement Supermarq : 0.6037735849056604
+- Parallelism Supermarq : 0.6981132075471699
+- Liveness Supermarq : 0.26838235294117646

@@ -1,0 +1,17 @@
+# Application: deutsch_n2
+- Qubit Count : 2
+- Circuit Depth : 5
+- Circuit Width : 2
+- Retention Lifespan : 1.6094379124341003
+- Gate Density : 0.6
+- Dual Gate Count : 1
+- Measurement Density : 1.151292546497023
+- Size Factor : 1.791759469228055
+- Gate Count : 5
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.2
+- Parallelism Supermarq : 0.0
+- Liveness Supermarq : 0.8

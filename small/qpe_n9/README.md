@@ -1,0 +1,17 @@
+# Application: qpe_n9
+- Qubit Count : 9
+- Circuit Depth : 21
+- Circuit Width : 9
+- Retention Lifespan : 3.044522437723423
+- Gate Density : 3.6296296296296298
+- Dual Gate Count : 43
+- Measurement Density : 0.8736245025099404
+- Size Factor : 6.894670039433482
+- Gate Count : 643
+- Entanglement Variance : 1.0241216982088763
+- Communication Supermarq : 0.4444444444444444
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.48484848484848486
+- Parallelism Supermarq : 0.36363636363636365
+- Liveness Supermarq : 0.31216931216931215

@@ -1,0 +1,17 @@
+# Application: vqe_uccsd_n8
+- Qubit Count : 8
+- Circuit Depth : 7252
+- Circuit Width : 8
+- Retention Lifespan : 8.889032571874742
+- Gate Density : 0.2808880308880309
+- Dual Gate Count : 5488
+- Measurement Density : inf
+- Size Factor : 9.698674957906642
+- Gate Count : 10808
+- Entanglement Variance : 1.7918928362939122
+- Communication Supermarq : 0.6071428571428571
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 0.9923469387755102
+- Entanglement Supermarq : 0.5077720207253886
+- Parallelism Supermarq : 0.3290155440414507
+- Liveness Supermarq : 0.2808880308880309

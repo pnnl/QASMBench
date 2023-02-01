@@ -1,0 +1,17 @@
+# Application: toffoli_n3
+- Qubit Count : 3
+- Circuit Depth : 13
+- Circuit Width : 3
+- Retention Lifespan : 2.5649493574615367
+- Gate Density : 0.6153846153846154
+- Dual Gate Count : 6
+- Measurement Density : 1.2211872153765488
+- Size Factor : 3.1780538303479458
+- Gate Count : 18
+- Entanglement Variance : 0.0
+- Communication Supermarq : 1.0
+- Measurement Supermarq : 0.0
+- Depth Supermarq : 1.0
+- Entanglement Supermarq : 0.3333333333333333
+- Parallelism Supermarq : 0.2777777777777778
+- Liveness Supermarq : 0.6923076923076923
