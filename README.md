@@ -54,6 +54,7 @@ Quantum circuits using **2 to 10** qubits.
 | bell | Circuit equivalent to Bell inequality test | Logic Operation | 4 | 33 | 7 | [Cirq](https://github.com/quantumlib/cirq) |
 | qft | Quantum Fourier transform | Hidden Subgroup | 4 | 36 | 12 | [OpenQASM](https://github.com/Qiskit/openqasm) |
 | variational | Variational ansatz for a Jellium Hamiltonian with a linear-swap network | Quantum Simulation | 4 | 54 | 16 | [OpenFermion](https://github.com/quantumlib/OpenFermion-Cirq)| 
+| vqe | Variational quantum eigensolver | Linear Equation | 4 | 89 | 9 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 4 | 220 | 88 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | basis_trotter | Implement Trotter steps for molecule LiH at equilibrium geometry | Quantum Simulation | 4 | 1626 | 582 | [OpenFermion](https://github.com/quantumlib/OpenFermion-Cirq)|
 | qec_sm | Repetition code syndrome measurement | Error Correction | 5 | 5 | 4 | [OpenQASM](https://github.com/Qiskit/openqasm) |
@@ -96,7 +97,7 @@ Quantum circuits using **11 to 27** qubits.
 | bwt | Binary Welded Tree: a quantum walk algorithm in continuous time domain | Quantum Walk | 21 | 462001 | 174800 | QASMBench |
 | cat_state | Coherent superposition of two coherent states with opposite phase | Logical Operation | 22 | 22 | 21 | QASMBench |
 | ghz_state | Greenberger-Horne-Zeilinger (GHZ) state for max entanglement | Logical Operation | 23 | 23 | 22 | QASMBench |
-| vqe | Variational quantum eigensolver with UCCSD | Quantum Simulation | 24 | 2306072 | 1538240 | QASMBench |
+| vqe | Variational quantum eigensolver | Quantum Simulation | 24 | 2306072 | 1538240 | QASMBench |
 | swap_test | Swap test to measure quantum state distance | Machine Learning | 25 | 230 | 96 | QASMBench |
 | knn | Quantum K-nearest neighbor | Search and Optimization | 25 | 230 | 96 | [Ref](https://arxiv.org/pdf/2003.09187.pdf) |
 | ising | Ising model simulation via QC | Quantum Simulation | 26 | 280 | 50 | QASMBench |
