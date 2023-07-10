@@ -89,6 +89,7 @@ Quantum circuits using **11 to 27** qubits.
 | hhl  | Using HHL algorithm to solve linear system of equations  | Linear Equation  | 14 | 3726506 | 1042859 |[HHL](https://github.com/anedumla/quantum_linear_solvers)|
 | qf21 | Using quantum phase estimation to factor the number 21 | Hidden Subgroup | 15 | 311 | 115 | [AgentANAKIN](https://github.com/AgentANAKIN/Quantum-Factoring-21) |
 | multiplier | Quantum multiplier | Quantum Arithmetic | 15 | 574 | 246 | [Cirq](https://github.com/quantumlib/cirq) |
+| factor247 | Factorizing 247 | Hidden Subgroup | 15 | 41576 | 16361 | Produced from [Ref](https://www.it4i.cz/en) | 
 | dnn | quantum neural network sample | Machine Learning | 16 | 2016 | 384 | [Ref](https://arxiv.org/abs/2012.00256) |
 | qec9xz | Quantum error correction 9-qubit code | Error Correction | 17 | 53 | 32 | [Ref](https://arxiv.org/pdf/0905.2794.pdf) |
 | qft | Quantum Fourier transform | Hidden Subgroup | 18 | 783 | 306 | [OpenQASM](https://github.com/Qiskit/openqasm) |

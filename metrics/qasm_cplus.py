@@ -47,7 +47,7 @@ STANDARD_GATE_TABLE = {
         "rz":1,  #Rotation around Z-axis
         "c1":1,  #Arbitrary 1-qubit gate
         "c2":1,  #Arbitrary 2-qubit gate
-        "sx":1,  #Square root of X-gate
+        "sx":1  #Square root of X-gate
         }  
 
 # Composition gates are gates defined in OpenQASM header.
@@ -70,7 +70,9 @@ COMPOSITION_GATE_TABLE = {
         "rc3x":18,    #Relative-phase 3-controlled X gate
         "c3x":27,     #3-controlled X gate
         "c3sqrtx":27, #3-controlled sqrt(X) gate
-        "c4x":87      #4-controlled X gate
+        "c4x":87,     #4-controlled X gate
+        "cp":5,  # Controlled phase
+        "cu":7,  # Controlled U gate
         }
 
 # OpenQASM native gate table, other gates are user-defined.
@@ -83,11 +85,11 @@ GATE_TABLE.update(COMPOSITION_GATE_TABLE)
 
 # Number of CX in Standard gates
 STANDARD_CX_TABLE = { "u3":0, "u2":0, "u1":0, "cx":1, "id":0, "x":0, "y":0, "z":0, "h":0, 
-        "s":0, "sdg":0, "t":0, "tdg":0, "rx":0, "ry":0, "rz":0, "c1":0, "c2":1, "sx":0} 
+                     "s":0, "sdg":0, "t":0, "tdg":0, "rx":0, "ry":0, "rz":0, "c1":0, "c2":1, "sx":0} 
 # Number of CX in Composition gates
 COMPOSITION_CX_TABLE = {"cz":1, "cy":1, "swap":3, "ch":2, "ccx":6, "cswap":8, "crx":2, "cry":2,
         "crz":2, "cu1":2, "cu3":2, "rxx":2, "rzz":2, "rccx":3, "rc3x":6, "c3x":6, "c3sqrtx":6,
-        "c4x":18}
+        "c4x":18, "cu":2, "cp":2}
 CX_TABLE = dict(STANDARD_CX_TABLE)
 CX_TABLE.update(COMPOSITION_CX_TABLE)
 
