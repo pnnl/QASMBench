@@ -1,3 +1,4 @@
+//SAT: Should obtain 11 in very high probability, see the paper "Automatically Solving NP-Complete Problems on a Quantum Computer"
 OPENQASM 2.0;
 include "qelib1.inc";
 
