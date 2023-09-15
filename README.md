@@ -129,7 +129,7 @@ Quantum circuits using **28 to 433** qubits or more.
 | wstate |  W-state preparation and assessment | Logical Operation | 36, 76, 118, 380 | 211, 451, 703, 2275 | 70, 150, 234, 758 | QASMBench |
 | quantum telecloning | Prepare quantum telecloning state | Quantum Cloning | 201, 2001 | | | [Ref1](https://arxiv.org/abs/2308.15579), [Ref2](https://arxiv.org/abs/2210.10164), [Ref3](https://arxiv.org/abs/2205.00125) |
 | QAOA on MAX-3-SAT | QAOA with random angles on random 3-SAT problems | QAOA | 100, 1000, 10000 | | | [Ref](https://arxiv.org/abs/2306.03238) |
-| quantum volume | Random Quantum Volume Benchmark Circuits | Quantum Volume | 32, 100, 1000 | | | [Ref1](https://arxiv.org/abs/1811.12926) [Ref2](https://arxiv.org/abs/2110.14808) [Ref3](https://arxiv.org/abs/2203.03816) |
+| quantum volume | Random Quantum Volume Benchmark Circuits | Quantum Volume | 32, 100, 1000 | | | [Ref1](https://arxiv.org/abs/1811.12926), [Ref2](https://arxiv.org/abs/2110.14808), [Ref3](https://arxiv.org/abs/2203.03816) |
 
 ### qelib1.inc
 OpenQASM header file that defines all the gates. Please see [OpenQASM](https://github.com/Qiskit/openqasm) and our [paper](qasmbench.pdf) for details.
