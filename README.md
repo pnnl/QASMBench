@@ -53,7 +53,7 @@ Quantum circuits using **2 to 10** qubits.
 | hs4 | Hidden subgroup problem | Hidden Subgroup | 4 | 28 | 4 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | bell | Circuit equivalent to Bell inequality test | Logic Operation | 4 | 33 | 7 | [Cirq](https://github.com/quantumlib/cirq) |
 | qft | Quantum Fourier transform | Hidden Subgroup | 4 | 36 | 12 | [OpenQASM](https://github.com/Qiskit/openqasm) |
-| variational | Variational ansatz for a Jellium Hamiltonian with a linear-swap network | Quantum Simulation | 4 | 54 | 16 | [OpenFermion](https://github.com/quantumlib/OpenFermion-Cirq)| 
+| variational | Variational ansatz for a Jellium Hamiltonian with a linear-swap network | Quantum Simulation | 4 | 54 | 16 | [OpenFermion](https://github.com/quantumlib/OpenFermion-Cirq)|
 | vqe | Variational quantum eigensolver | Linear Equation | 4 | 89 | 9 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | vqe_uccsd | Variational quantum eigensolver with UCCSD | Linear Equation | 4 | 220 | 88 | [Scaffold](https://github.com/epiqc/ScaffCC) |
 | basis_trotter | Implement Trotter steps for molecule LiH at equilibrium geometry | Quantum Simulation | 4 | 1626 | 582 | [OpenFermion](https://github.com/quantumlib/OpenFermion-Cirq)|
@@ -89,7 +89,7 @@ Quantum circuits using **11 to 27** qubits.
 | hhl  | Using HHL algorithm to solve linear system of equations  | Linear Equation  | 14 | 3726506 | 1042859 |[HHL](https://github.com/anedumla/quantum_linear_solvers)|
 | qf21 | Using quantum phase estimation to factor the number 21 | Hidden Subgroup | 15 | 311 | 115 | [AgentANAKIN](https://github.com/AgentANAKIN/Quantum-Factoring-21) |
 | multiplier | Quantum multiplier | Quantum Arithmetic | 15 | 574 | 246 | [Cirq](https://github.com/quantumlib/cirq) |
-| factor247 | Factorizing 247 to 13x19 with preiod=12 | Hidden Subgroup | 15 | 610573 | 273071 | Reproduced from [Ref](https://www.it4i.cz/en) with modification | 
+| factor247 | Factorizing 247 to 13x19 with preiod=12 | Hidden Subgroup | 15 | 610573 | 273071 | Reproduced from [Ref](https://www.it4i.cz/en) with modification |
 | dnn | quantum neural network sample | Machine Learning | 16 | 2016 | 384 | [Ref](https://arxiv.org/abs/2012.00256) |
 | qec9xz | Quantum error correction 9-qubit code | Error Correction | 17 | 53 | 32 | [Ref](https://arxiv.org/pdf/0905.2794.pdf) |
 | qft | Quantum Fourier transform | Hidden Subgroup | 18 | 783 | 306 | [OpenQASM](https://github.com/Qiskit/openqasm) |
@@ -107,7 +107,7 @@ Quantum circuits using **11 to 27** qubits.
 | wstate |  W-state preparation and assessment | Logical Operation | 27 | 157 | 52 | QASMBench |
 
 ### Large-scale
-Quantum circuits using more than **28 to 433** qubits.
+Quantum circuits using **28 to 433** qubits or more.
 
 | Benchmark | Description | Algorithm | Qubits | Gates | CNOT | Reference |
 | :-------: |  ---------  | :-------: | :----: | :---: | :---:| :-------: |
@@ -127,8 +127,9 @@ Quantum circuits using more than **28 to 433** qubits.
 | square_root | Computing the square root of an number via amplitude amplification | Quantum Arithmetic | 45, 60  | 138794, 1061939  | 54151, 415123 |  QASMBench |
 | swap_test | Swap test to measure quantum state distance | Machine Learning | 41, 83, 115, 361 | 382, 781, 1085, 3422 | 160, 328, 456, 1440 | QASMBench |
 | wstate |  W-state preparation and assessment | Logical Operation | 36, 76, 118, 380 | 211, 451, 703, 2275 | 70, 150, 234, 758 | QASMBench |
-
-
+| quantum telecloning | Prepare quantum telecloning state | | 201, 2001 | | | [Ref1](https://arxiv.org/abs/2308.15579), [Ref2](https://arxiv.org/abs/2210.10164), [Ref3](https://arxiv.org/abs/2205.00125) |
+| QAOA on MAX-3-SAT | QAOA with random angles on random 3-SAT problems | | | 100, 1000, 10000 | [Ref](https://arxiv.org/abs/2306.03238) |
+| quantum volume | Random Quantum Volume Benchmark Circuits | | 32, 100, 1000 | | | [Ref1](https://arxiv.org/abs/1811.12926) [Ref2](https://arxiv.org/abs/2110.14808) [Ref3](https://arxiv.org/abs/2203.03816) |
 
 ### qelib1.inc
 OpenQASM header file that defines all the gates. Please see [OpenQASM](https://github.com/Qiskit/openqasm) and our [paper](qasmbench.pdf) for details.
@@ -146,7 +147,7 @@ The QASMBench circuits can be directly uploaded and verified on [IBM-Q](https://
 
 ## Classic HPC simulation
 
-You may also want to use our state-vector and density-matrix quantum circuit simulator ([SV-Sim](https://github.com/pnnl/SV-Sim) and [DM-Sim](https://github.com/pnnl/DM-Sim)) for simulating the QASMBench benchmark circuits efficiently on modern CPU (Intel X86, AMD X86, IBM Power), GPU (NVIDIA GPU and AMD GPU) and Xeon-Phi workstations or HPC clusters (e.g., ORNL Summit/Frontier, ANL Theta, and NERSC Cori/Perlmutter Supercomputers). 
+You may also want to use our state-vector and density-matrix quantum circuit simulator ([SV-Sim](https://github.com/pnnl/SV-Sim) and [DM-Sim](https://github.com/pnnl/DM-Sim)) for simulating the QASMBench benchmark circuits efficiently on modern CPU (Intel X86, AMD X86, IBM Power), GPU (NVIDIA GPU and AMD GPU) and Xeon-Phi workstations or HPC clusters (e.g., ORNL Summit/Frontier, ANL Theta, and NERSC Cori/Perlmutter Supercomputers).
 
 
 ## Metrics
@@ -214,7 +215,7 @@ IBMBackend.get_qasm()
 
 
 
-## Authors 
+## Authors
 
 [Ang Li](http://www.angliphd.com/), Pacific Northwest National Laboratory (PNNL)
 
@@ -224,7 +225,7 @@ IBMBackend.get_qasm()
 
 [James Ang](https://www.pnnl.gov/people/james-ang), Pacific Northwest National Laboratory (PNNL)
 
-And also the original authors that developed these quantum routines. 
+And also the original authors that developed these quantum routines.
 
 
 ## Citation format
@@ -263,7 +264,7 @@ This research used resources from the Oak Ridge Leadership Computing Facility, w
 Contract DE-AC05-00OR22725. This research used resources of the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility located at Lawrence Berkeley National Laboratory, operated under Contract No. DE-AC02-05CH11231 using NERSC award ERCAP0022228.
 
 We also acknowledge support from Microsoft’s Azure Quantum for providing credits and access to the ion-trap quantum hardware used in our evaluation.
-The Pacific Northwest National Laboratory is operated by Battelle for the U.S. Department of Energy under contract DE-AC05-76RL01830. 
+The Pacific Northwest National Laboratory is operated by Battelle for the U.S. Department of Energy under contract DE-AC05-76RL01830.
 
 
 
