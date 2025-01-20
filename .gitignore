@@ -15,3 +15,4 @@ metrics/__pycache__/SupermarqMetrics.cpython-39.pyc
 *.iml
 transpile_script.py
 .idea/shelf/Changes/shelved.patch
+*.swp
