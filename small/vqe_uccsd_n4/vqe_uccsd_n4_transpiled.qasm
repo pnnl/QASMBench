@@ -239,3 +239,7 @@ rz(-pi) reg[2];
 x reg[2];
 rz(-pi) reg[3];
 x reg[3];
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+measure q[2] -> c[2];
+measure q[3] -> c[3];

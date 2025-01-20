@@ -222,3 +222,7 @@ cx reg[3],reg[2];
 y reg[3];
 y reg[2];
 
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+measure q[2] -> c[2];
+measure q[3] -> c[3];
